@@ -291,8 +291,8 @@ button {
 .quote {
   margin: 0 0 22px;
   font-style: italic;
-  font-size: 1.12rem;
-  line-height: 1.45;
+  font-size: 3.36rem;
+  line-height: 1.2;
   font-weight: 400;
   color: var(--ink);
 }
@@ -300,10 +300,11 @@ button {
 .quote-cn {
   font-style: normal;
   font-family: var(--cn);
-  font-size: 0.98rem;
+  font-size: 2.94rem;
   letter-spacing: 0.04em;
   color: var(--ink-dim);
   margin-top: 8px;
+  line-height: 1.25;
 }
 
 .section-label {
