@@ -6,17 +6,20 @@
   --pollen-soft: #e8b896;
   --grain-blue: #4a6d88;
   --mist: #8fa4b8;
-  --ink: #f3e6d8;
-  --ink-dim: rgba(243, 230, 216, 0.62);
-  --ink-faint: rgba(243, 230, 216, 0.38);
-  --line: rgba(243, 230, 216, 0.28);
-  --line-strong: rgba(243, 230, 216, 0.5);
+  --ink: #2a2438;
+  --ink-title: #1e1a28;
+  --chrome: rgba(42, 36, 56, 0.65);
+  --ink-dim: rgba(42, 36, 56, 0.62);
+  --ink-faint: rgba(30, 26, 40, 0.42);
+  --line: rgba(42, 36, 56, 0.32);
+  --line-strong: rgba(30, 26, 40, 0.52);
   --stone: #3a3532;
+  --paper: #f3e6d8;
   --serif: "Newsreader", "Noto Serif TC", "Noto Serif SC", "Songti TC", serif;
   --sans: "Inter", "Noto Sans TC", system-ui, sans-serif;
   --cn: "Noto Serif TC", "Noto Serif SC", "Songti TC", serif;
   --bleed: 16px;
-  --spine: 64px;
+  --spine: 52px;
   --dock: 72px;
   --radius-frame: 10px;
 }
@@ -149,11 +152,11 @@ button {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   font-family: var(--sans);
-  font-size: 18px;
+  font-size: 10.8px;
   font-weight: 500;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--ink-dim);
+  color: var(--chrome);
   line-height: 1;
 }
 
@@ -161,9 +164,9 @@ button {
   writing-mode: vertical-rl;
   text-orientation: upright;
   font-family: var(--cn);
-  font-size: 22px;
+  font-size: 13.2px;
   letter-spacing: 0.42em;
-  color: var(--ink);
+  color: var(--chrome);
   line-height: 1;
 }
 
@@ -216,7 +219,7 @@ button {
   font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--ink);
+  color: var(--chrome);
   line-height: 1;
 }
 
@@ -239,6 +242,7 @@ button {
   font-size: clamp(2.15rem, 9.4vw, 3.05rem);
   line-height: 0.92;
   letter-spacing: -0.03em;
+  color: var(--ink-title);
 }
 
 .title-cn {
@@ -247,7 +251,7 @@ button {
   font-size: 1.15rem;
   font-weight: 400;
   letter-spacing: 0.18em;
-  color: var(--ink);
+  color: var(--ink-title);
 }
 
 .author {
@@ -305,7 +309,7 @@ button {
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--ink);
+  color: var(--ink-title);
   margin: 0 0 10px;
   line-height: 1.2;
 }
@@ -344,7 +348,7 @@ button {
 }
 
 .module-head .kicker {
-  color: var(--ink);
+  color: var(--ink-title);
   font-size: 27px;
   line-height: 1.2;
 }
@@ -360,7 +364,7 @@ button {
   font-size: 1.7rem;
   line-height: 1;
   letter-spacing: -0.04em;
-  color: var(--ink);
+  color: var(--ink-title);
 }
 
 .principle h3 {
@@ -603,6 +607,7 @@ button {
   font-weight: 400;
   letter-spacing: -0.03em;
   line-height: 0.95;
+  color: var(--ink-title);
 }
 
 .month-nav {
@@ -710,7 +715,7 @@ button {
   font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--ink);
+  color: var(--chrome);
   margin: 0 0 18px;
 }
 
@@ -738,6 +743,7 @@ button {
   font-size: 1.28rem;
   line-height: 1.15;
   letter-spacing: -0.02em;
+  color: var(--ink-title);
 }
 
 .inspect-book .cn {
@@ -754,7 +760,7 @@ button {
   font-size: 9px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--ink);
+  color: var(--chrome);
   border-bottom: 1px solid var(--line-strong);
   padding: 0 0 2px;
   margin: 0 0 12px;
@@ -827,8 +833,8 @@ button {
 }
 
 .seg button[aria-pressed="true"] {
-  color: var(--dusk);
-  background: var(--ink);
+  color: var(--paper);
+  background: var(--ink-title);
 }
 
 .metrics {
@@ -849,6 +855,7 @@ button {
   font-weight: 400;
   letter-spacing: -0.04em;
   line-height: 1;
+  color: var(--ink-title);
 }
 
 .metric span {
@@ -900,7 +907,7 @@ button {
   align-items: center;
   gap: 4px;
   padding: 8px 0 4px;
-  color: var(--ink-dim);
+  color: var(--chrome);
 }
 
 .dock button svg {
@@ -918,11 +925,11 @@ button {
 }
 
 .dock button[aria-current="page"] {
-  color: var(--ink);
+  color: color-mix(in srgb, var(--ink-title) 70%, transparent);
 }
 
 .dock button[aria-current="page"] span {
-  border-bottom: 1px solid var(--ink);
+  border-bottom: 1px solid currentColor;
   padding-bottom: 1px;
 }
 

@@ -1,4 +1,4 @@
-const CACHE = "keep-shell-v12";
+const CACHE = "keep-shell-v13";
 const SHELL = ["./", "./index.html", "./styles.css", "./app.js", "./books.js", "./manifest.json", "./icon.svg"];
 
 self.addEventListener("install", (event) => {
