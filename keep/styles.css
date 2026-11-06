@@ -16,7 +16,7 @@
   --sans: "Inter", "Noto Sans TC", system-ui, sans-serif;
   --cn: "Noto Serif TC", "Noto Serif SC", "Songti TC", serif;
   --bleed: 16px;
-  --spine: 52px;
+  --spine: 64px;
   --dock: 72px;
   --radius-frame: 10px;
 }
@@ -149,7 +149,7 @@ button {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   font-family: var(--sans);
-  font-size: 9px;
+  font-size: 18px;
   font-weight: 500;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -161,7 +161,7 @@ button {
   writing-mode: vertical-rl;
   text-orientation: upright;
   font-family: var(--cn);
-  font-size: 11px;
+  font-size: 22px;
   letter-spacing: 0.42em;
   color: var(--ink);
   line-height: 1;
