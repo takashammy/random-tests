@@ -294,12 +294,13 @@ button {
 
 .section-label {
   font-family: var(--sans);
-  font-size: 9px;
+  font-size: 27px;
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--ink);
   margin: 0 0 10px;
+  line-height: 1.2;
 }
 
 .thesis,
@@ -332,10 +333,13 @@ button {
   justify-content: space-between;
   gap: 10px;
   margin-bottom: 16px;
+  flex-wrap: wrap;
 }
 
 .module-head .kicker {
   color: var(--ink);
+  font-size: 27px;
+  line-height: 1.2;
 }
 
 .principle {
