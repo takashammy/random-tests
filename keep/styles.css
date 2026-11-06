@@ -453,13 +453,26 @@ button {
   display: grid;
   place-items: center;
   flex: 0 0 auto;
-  color: var(--ink);
+  color: var(--dusk);
+  background: transparent;
+}
+
+.check:active {
+  transform: scale(0.94);
+}
+
+.check[aria-pressed="true"] {
+  background: var(--ink);
+  border-color: var(--ink);
 }
 
 .check[aria-pressed="true"]::after {
   content: "✓";
   font-family: var(--sans);
   font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--dusk);
 }
 
 .check-meta {

@@ -45,6 +45,7 @@
     readAsPro: "Read as Pro",
     emptyDay: "Nothing logged.",
     weeklyEmpty: "Nothing logged this week yet.",
+    noBooks: "No books found",
     weeklyNotePh: "Optional weekly note — private.",
     canon: "Shelf",
     month: "Month",
@@ -566,7 +567,7 @@
       ${gate}
       <div class="chips">${chips}</div>
       <input class="search" type="search" value="${esc(STATE.query)}" placeholder="${esc(t.searchPh)}" data-search>
-      <ul class="catalog">${items || `<li class="quiet-note">${esc(t.weeklyEmpty)}</li>`}</ul>
+      <ul class="catalog">${items || `<li class="quiet-note">${esc(t.noBooks)}</li>`}</ul>
     `;
   }
 
@@ -756,12 +757,14 @@
       const book = bookById(STATE.bookId);
       const d = todayIso();
       const cur = logFor(d, book.id);
-      patchLog(d, book.id, { practice: !cur.practice, read: true });
-      render();
+      const next = !cur.practice;
+      patchLog(d, book.id, { practice: next, read: true });
+      el.setAttribute("aria-pressed", next ? "true" : "false");
       return;
     }
     if (el.hasAttribute("data-filter")) {
       STATE.filter = el.getAttribute("data-filter");
+      STATE.query = "";
       save();
       render();
       return;
