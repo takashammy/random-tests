@@ -231,21 +231,20 @@
 
   function weekStats() {
     const dates = weekBounds();
-    const books = new Set();
-    let practices = 0;
+    const bookRead = new Set();
+    const bookPracticed = new Set();
     const rows = [];
     dates.forEach((d) => {
       const day = STATE.logs[d];
       if (!day) return;
       Object.entries(day).forEach(([id, log]) => {
-        if (isActiveLog(log)) {
-          books.add(id);
-          rows.push({ date: d, id, log });
-        }
-        if (log.practice) practices += 1;
+        if (!isActiveLog(log)) return;
+        rows.push({ date: d, id, log });
+        bookRead.add(id);
+        if (log.practice) bookPracticed.add(id);
       });
     });
-    return { books: books.size, practices, rows };
+    return { books: bookRead.size, practices: bookPracticed.size, rows };
   }
 
   function categories() {
