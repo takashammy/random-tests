@@ -184,27 +184,10 @@ button {
 
 /* Header row */
 .row-top {
-  display: grid;
-  grid-template-columns: auto 1px 1fr;
+  display: flex;
   align-items: center;
   gap: 14px;
   margin-bottom: 22px;
-}
-
-.vol-num {
-  font-family: var(--serif);
-  font-weight: 400;
-  font-size: 42px;
-  line-height: 0.85;
-  letter-spacing: -0.03em;
-  font-variation-settings: "opsz" 72;
-}
-
-.vol-split {
-  width: 1px;
-  height: 22px;
-  background: var(--line-strong);
-  justify-self: center;
 }
 
 .pills {
@@ -489,21 +472,6 @@ button {
   outline: 1px solid var(--line-strong);
 }
 
-.next-vol {
-  display: block;
-  margin: 28px auto 8px;
-  text-align: center;
-  font-family: var(--sans);
-  font-size: 10px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--ink-dim);
-}
-
-.next-vol:hover {
-  color: var(--ink);
-}
-
 /* Library */
 .chips {
   display: flex;
@@ -556,7 +524,7 @@ button {
 
 .catalog-row {
   display: grid;
-  grid-template-columns: 2.2rem 1fr auto;
+  grid-template-columns: 1fr auto;
   gap: 8px 10px;
   padding: 14px 0;
   align-items: start;
@@ -566,12 +534,6 @@ button {
 
 .catalog li:last-child {
   border-bottom: 1px solid var(--line);
-}
-
-.catalog .idx {
-  font-size: 1.35rem;
-  line-height: 1;
-  letter-spacing: -0.03em;
 }
 
 .catalog h2 {
@@ -731,7 +693,7 @@ button {
 
 .log-line {
   display: grid;
-  grid-template-columns: 2rem 1fr auto;
+  grid-template-columns: 1fr auto;
   gap: 8px;
   margin: 0 0 8px;
   font-size: 0.95rem;
@@ -742,7 +704,6 @@ button {
   margin: 0 0 14px;
   font-style: italic;
   color: var(--ink-dim);
-  padding-left: 2rem;
 }
 
 .empty-inspect {

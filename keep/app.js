@@ -23,7 +23,6 @@
     east: "03 Eastern resonance",
     practice: "04 Behavior practice",
     today: "Today",
-    next: "next volume",
     logged: "Logged",
     pro: "Pro",
     journalPh: "A private line. It stays on this device.",
@@ -43,13 +42,13 @@
     disclaimer: "This is a reading sanctuary, not therapy. Nothing here is a diagnosis, a couple’s program, or a substitute for care.",
     firstRun: "A quiet room for relationship books. Practices work for one person. Notes stay private on this device.",
     continue: "Continue",
-    gate: "This volume sits in the Pro library. The rest of the shelf is visible; membership lives under You.",
+    gate: "This book sits in the Pro library. The rest of the shelf is visible; membership lives under You.",
     goYou: "Open You",
     readAsPro: "Read as Pro",
-    emptyDay: "No volume logged.",
+    emptyDay: "Nothing logged.",
     weeklyEmpty: "Nothing logged this week yet.",
     weeklyNotePh: "Optional weekly note — private.",
-    canon: "Canon",
+    canon: "Shelf",
     month: "Month"
   };
 
@@ -123,10 +122,6 @@
 
   function bookById(id) {
     return BOOKS.find((b) => b.id === id) || dailyBook();
-  }
-
-  function bookIndex(id) {
-    return BOOKS.findIndex((b) => b.id === id);
   }
 
   function isoDate(d) {
@@ -329,11 +324,6 @@
     renderDock();
   }
 
-  function volLabel(book) {
-    const i = bookIndex(book.id) + 1;
-    return String(i).padStart(2, "0");
-  }
-
   function renderSpine() {
     const el = document.getElementById("spine");
     const t = ui();
@@ -388,8 +378,6 @@
     const book = bookById(STATE.bookId);
     const t = ui();
     const bilingual = STATE.bilingual;
-    const idx = bookIndex(book.id);
-    const next = BOOKS[(idx + 1) % BOOKS.length];
     const d = todayIso();
     const log = logFor(d, book.id);
     const extra = STATE.extraOpen;
@@ -423,8 +411,6 @@
     return `
       ${STATE.seenDisclaimer ? "" : `<aside class="first-run">${esc(t.firstRun)}<button type="button" data-dismiss-first>${esc(t.continue)}</button></aside>`}
       <header class="row-top">
-        <div class="vol-num">${volLabel(book)}</div>
-        <div class="vol-split"></div>
         <div class="pills">
           <span class="pill">${esc(book.topLabelEn)} <span class="sep">|</span> ${esc(book.categoryEn)}</span>
         </div>
@@ -485,7 +471,6 @@
         <textarea class="journal" data-journal placeholder="${esc(t.journalPh)}">${esc(log.note)}</textarea>
       </section>
 
-      <button type="button" class="next-vol" data-next="${esc(next.id)}">${esc(t.next)} ${volLabel(next)}</button>
       <p class="disclaimer">${esc(t.disclaimer)}</p>
     `;
   }
@@ -517,7 +502,6 @@
         return `
         <li>
           <button type="button" class="catalog-row" data-open="${esc(b.id)}">
-            <span class="idx">${volLabel(b)}</span>
             <span>
               <h2>${esc(b.titleFlatEn)}</h2>
               ${bilingual ? `<p class="cn cn-only">${esc(cn(b.titleCn))}</p>` : ""}
@@ -543,8 +527,6 @@
 
     return `
       <header class="row-top">
-        <div class="vol-num">02</div>
-        <div class="vol-split"></div>
         <div class="pills"><span class="pill">Library <span class="sep">|</span> ${esc(t.canon)}</span></div>
       </header>
       ${gate}
@@ -599,7 +581,6 @@
             const b = bookById(id);
             return `
             <div class="log-line">
-              <span>${volLabel(b)}</span>
               <span>${esc(b.titleFlatEn)}</span>
               <span class="mark">${log.practice || log.read ? esc(t.logged) : ""}</span>
             </div>
@@ -610,8 +591,6 @@
 
     return `
       <header class="row-top">
-        <div class="vol-num">03</div>
-        <div class="vol-split"></div>
         <div class="pills"><span class="pill">Calendar <span class="sep">|</span> ${esc(monthName)}</span></div>
       </header>
       <div class="month-nav">
@@ -646,8 +625,6 @@
 
     return `
       <header class="row-top">
-        <div class="vol-num">04</div>
-        <div class="vol-split"></div>
         <div class="pills"><span class="pill">Profile <span class="sep">|</span> You</span></div>
       </header>
       <h1 class="month-name">You</h1>
@@ -699,7 +676,7 @@
   }
 
   function onAppClick(e) {
-    const el = e.target.closest("[data-go], [data-open], [data-next], [data-extra], [data-practice], [data-filter], [data-day], [data-cal], [data-bilingual], [data-script], [data-mem], [data-export], [data-dismiss-first], [data-read-pro]");
+    const el = e.target.closest("[data-go], [data-open], [data-extra], [data-practice], [data-filter], [data-day], [data-cal], [data-bilingual], [data-script], [data-mem], [data-export], [data-dismiss-first], [data-read-pro]");
     if (!el) return;
 
     if (el.hasAttribute("data-dismiss-first")) {
@@ -732,10 +709,6 @@
       STATE.gateId = null;
       save();
       go("reader", id);
-      return;
-    }
-    if (el.hasAttribute("data-next")) {
-      go("reader", el.getAttribute("data-next"));
       return;
     }
     if (el.hasAttribute("data-extra")) {
