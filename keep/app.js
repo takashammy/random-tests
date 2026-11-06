@@ -9,133 +9,48 @@
     you: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="3.1"/><path d="M6.2 19c1.4-2.6 3.4-3.9 5.8-3.9s4.4 1.3 5.8 3.9"/></svg>'
   };
 
+  /* Chrome is English-only. Chinese is editorial (titles, quotes, body, resonance). */
   const UI = {
-    en: {
-      read: "Read",
-      library: "Library",
-      calendar: "Calendar",
-      you: "You",
-      coreThesis: "Core thesis",
-      chapter: "02 Chapter summary",
-      extra: "Extra reading",
-      extraOpen: "Show extras",
-      extraClose: "Collapse extras",
-      east: "03 Eastern resonance",
-      practice: "04 Behavior practice",
-      today: "Today",
-      next: "next volume",
-      logged: "Logged",
-      pro: "Pro",
-      journalPh: "A private line. It stays on this device.",
-      searchPh: "Search title, author, Chinese",
-      all: "All",
-      weekly: "Weekly review",
-      booksRead: "Books read",
-      practices: "Practices applied",
-      export: "Export markdown",
-      bilingual: "Language",
-      bilingualOn: "EN + 中文",
-      bilingualOff: "English",
-      script: "Script",
-      membership: "Membership",
-      free: "Free daily",
-      proMem: "Pro library",
-      disclaimer: "This is a reading sanctuary, not therapy. Nothing here is a diagnosis, a couple’s program, or a substitute for care.",
-      firstRun: "A quiet room for relationship books. Practices work for one person. Notes stay private on this device.",
-      continue: "Continue",
-      gate: "This volume sits in the Pro library. The rest of the shelf is visible; membership lives under You.",
-      goYou: "Open You",
-      readAsPro: "Read as Pro",
-      emptyDay: "No volume logged.",
-      weeklyEmpty: "Nothing logged this week yet.",
-      weeklyNotePh: "Optional weekly note — private.",
-      canon: "Canon",
-      month: "Month"
-    },
-    tc: {
-      read: "讀",
-      library: "書庫",
-      calendar: "日曆",
-      you: "我",
-      coreThesis: "核心論述",
-      chapter: "02 章節要義",
-      extra: "延伸閱讀",
-      extraOpen: "展開延伸",
-      extraClose: "收合延伸",
-      east: "03 東方經典呼應",
-      practice: "04 行為練習",
-      today: "今日",
-      next: "下一卷",
-      logged: "已記",
-      pro: "Pro",
-      journalPh: "一句私密的話。留在這部裝置上。",
-      searchPh: "搜尋書名、作者、中文",
-      all: "全部",
-      weekly: "本週回顧",
-      booksRead: "已讀書目",
-      practices: "已做練習",
-      export: "匯出 Markdown",
-      bilingual: "語言",
-      bilingualOn: "中英對照",
-      bilingualOff: "僅英語",
-      script: "字體",
-      membership: "會員",
-      free: "每日免費",
-      proMem: "Pro 書庫",
-      disclaimer: "這裡是閱讀的房間，不是治療。沒有診斷，沒有雙人課程，也不能替代真正的照顧。",
-      firstRun: "一間安靜的關係書房。練習一個人就能做。筆記只留在這部裝置。",
-      continue: "繼續",
-      gate: "此卷在 Pro 書庫。書目可見；會員開關在「我」。",
-      goYou: "前往 我",
-      readAsPro: "以 Pro 閱讀",
-      emptyDay: "這天尚未記錄。",
-      weeklyEmpty: "本週還沒有記錄。",
-      weeklyNotePh: "可選的週記——私密。",
-      canon: "書目",
-      month: "月份"
-    },
-    sc: {
-      read: "读",
-      library: "书库",
-      calendar: "日历",
-      you: "我",
-      coreThesis: "核心论述",
-      chapter: "02 章节要义",
-      extra: "延伸阅读",
-      extraOpen: "展开延伸",
-      extraClose: "收合延伸",
-      east: "03 东方经典呼应",
-      practice: "04 行为练习",
-      today: "今日",
-      next: "下一卷",
-      logged: "已记",
-      pro: "Pro",
-      journalPh: "一句私密的话。留在这部装置上。",
-      searchPh: "搜索书名、作者、中文",
-      all: "全部",
-      weekly: "本周回顾",
-      booksRead: "已读书目",
-      practices: "已做练习",
-      export: "导出 Markdown",
-      bilingual: "语言",
-      bilingualOn: "中英对照",
-      bilingualOff: "仅英语",
-      script: "字体",
-      membership: "会员",
-      free: "每日免费",
-      proMem: "Pro 书库",
-      disclaimer: "这里是阅读的房间，不是治疗。没有诊断，没有双人课程，也不能替代真正的照顾。",
-      firstRun: "一间安静的关系书房。练习一个人就能做。笔记只留在这部装置。",
-      continue: "继续",
-      gate: "此卷在 Pro 书库。书目可见；会员开关在“我”。",
-      goYou: "前往 我",
-      readAsPro: "以 Pro 阅读",
-      emptyDay: "这天尚未记录。",
-      weeklyEmpty: "本周还没有记录。",
-      weeklyNotePh: "可选的周记——私密。",
-      canon: "书目",
-      month: "月份"
-    }
+    read: "Read",
+    library: "Library",
+    calendar: "Calendar",
+    you: "You",
+    coreThesis: "Core thesis",
+    chapter: "02 Chapter summary",
+    extra: "Extra reading",
+    extraOpen: "Show extras",
+    extraClose: "Collapse extras",
+    east: "03 Eastern resonance",
+    practice: "04 Behavior practice",
+    today: "Today",
+    next: "next volume",
+    logged: "Logged",
+    pro: "Pro",
+    journalPh: "A private line. It stays on this device.",
+    searchPh: "Search title, author, Chinese",
+    all: "All",
+    weekly: "Weekly review",
+    booksRead: "Books read",
+    practices: "Practices applied",
+    export: "Export markdown",
+    bilingual: "Language",
+    bilingualOn: "EN + Chinese",
+    bilingualOff: "English",
+    script: "Script",
+    membership: "Membership",
+    free: "Free daily",
+    proMem: "Pro library",
+    disclaimer: "This is a reading sanctuary, not therapy. Nothing here is a diagnosis, a couple’s program, or a substitute for care.",
+    firstRun: "A quiet room for relationship books. Practices work for one person. Notes stay private on this device.",
+    continue: "Continue",
+    gate: "This volume sits in the Pro library. The rest of the shelf is visible; membership lives under You.",
+    goYou: "Open You",
+    readAsPro: "Read as Pro",
+    emptyDay: "No volume logged.",
+    weeklyEmpty: "Nothing logged this week yet.",
+    weeklyNotePh: "Optional weekly note — private.",
+    canon: "Canon",
+    month: "Month"
   };
 
   const MONTHS_CN = {
@@ -185,8 +100,7 @@
   }
 
   function ui() {
-    if (!STATE.bilingual) return UI.en;
-    return STATE.script === "sc" ? UI.sc : UI.tc;
+    return UI;
   }
 
   function cn(obj) {
@@ -409,7 +323,7 @@
   /* ---------- render ---------- */
   function render() {
     document.documentElement.classList.toggle("en-only", !STATE.bilingual);
-    document.documentElement.lang = STATE.bilingual ? (STATE.script === "sc" ? "zh-Hans" : "zh-Hant") : "en";
+    document.documentElement.lang = "en";
     renderSpine();
     renderContent();
     renderDock();
@@ -423,32 +337,23 @@
   function renderSpine() {
     const el = document.getElementById("spine");
     const t = ui();
-    const bilingual = STATE.bilingual;
     if (STATE.view === "reader") {
       const book = bookById(STATE.bookId);
       el.innerHTML = `
-        <span class="spine-cn cn-only">${esc(cn(book.durationCn).split("：")[0] || "時間")}</span>
         <span class="spine-en">${esc(book.durationEn)}</span>
         <span class="spine-rule"></span>
-        <span class="spine-en">${esc(book.themeEn)}</span>
-        <span class="spine-cn cn-only">${esc(cn(book.themeCn).replace(/^主題[:：]\s*/, ""))}</span>`;
+        <span class="spine-en">${esc(book.themeEn)}</span>`;
       return;
     }
     if (STATE.view === "library") {
-      el.innerHTML = `
-        <span class="spine-en">Category</span>
-        ${bilingual ? `<span class="spine-cn">類別</span>` : ""}`;
+      el.innerHTML = `<span class="spine-en">Category</span>`;
       return;
     }
     if (STATE.view === "calendar") {
-      el.innerHTML = `
-        <span class="spine-en">${esc(t.month)}</span>
-        ${bilingual ? `<span class="spine-cn">月</span>` : ""}`;
+      el.innerHTML = `<span class="spine-en">${esc(t.month)}</span>`;
       return;
     }
-    el.innerHTML = `
-      <span class="spine-en">You</span>
-      ${bilingual ? `<span class="spine-cn">我</span>` : ""}`;
+    el.innerHTML = `<span class="spine-en">You</span>`;
   }
 
   function renderDock() {
@@ -494,7 +399,7 @@
         (h) => `
       <article class="principle">
         <div class="num">${h.num}</div>
-        <h3>${esc(h.titleEn)}${bilingual ? " / " + esc(cn(h.titleCn)) : ""}</h3>
+        <h3>${esc(h.titleEn)}</h3>
         <p class="concept">${esc(h.conceptEn)}</p>
         <p class="plain">${esc(h.plainEn)}</p>
         ${bilingual ? `<p class="plain cn-only">${esc(cn(h.plainCn))}</p>` : ""}
@@ -522,7 +427,6 @@
         <div class="vol-split"></div>
         <div class="pills">
           <span class="pill">${esc(book.topLabelEn)} <span class="sep">|</span> ${esc(book.categoryEn)}</span>
-          ${bilingual ? `<span class="pill cn-only">${esc(cn(book.topLabelCn))}</span>` : ""}
         </div>
       </header>
       <div class="title-block">
@@ -747,7 +651,6 @@
         <div class="pills"><span class="pill">Profile <span class="sep">|</span> You</span></div>
       </header>
       <h1 class="month-name">You</h1>
-      ${STATE.bilingual ? `<p class="title-cn cn-only">${STATE.script === "sc" ? "我" : "我"}</p>` : ""}
       <div class="ornament"><span class="dot"></span></div>
 
       <div class="setting">
@@ -757,17 +660,17 @@
         </div>
         <div class="seg">
           <button type="button" data-bilingual="off" aria-pressed="${!STATE.bilingual}">EN</button>
-          <button type="button" data-bilingual="on" aria-pressed="${STATE.bilingual}">EN+中</button>
+          <button type="button" data-bilingual="on" aria-pressed="${STATE.bilingual}">EN+ZH</button>
         </div>
       </div>
       <div class="setting">
         <div>
           <span class="kicker">${esc(t.script)}</span>
-          <p>${STATE.script === "sc" ? "简体" : "繁體"}</p>
+          <p>${STATE.script === "sc" ? "Simplified" : "Traditional"}</p>
         </div>
         <div class="seg">
-          <button type="button" data-script="tc" aria-pressed="${STATE.script === "tc"}">繁</button>
-          <button type="button" data-script="sc" aria-pressed="${STATE.script === "sc"}">简</button>
+          <button type="button" data-script="tc" aria-pressed="${STATE.script === "tc"}">Trad</button>
+          <button type="button" data-script="sc" aria-pressed="${STATE.script === "sc"}">Simp</button>
         </div>
       </div>
       <div class="setting">
