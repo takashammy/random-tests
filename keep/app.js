@@ -1,5 +1,6 @@
-/* Keep — Luminary chassis, Soft Uncanny skin. Local-state prototype. */
+/* Keep 0.1 — Luminary chassis, Soft Uncanny skin. Local-state prototype. */
 (function () {
+  const VERSION = "0.1";
   const STORAGE = "keep.v1";
   const BOOKS = window.BOOKS;
   const ICONS = {
@@ -787,6 +788,7 @@
         <button type="button" class="export" data-export>${esc(t.export)}</button>
       </section>
       <p class="disclaimer">${esc(t.disclaimer)}</p>
+      <p class="version">Keep ${esc(VERSION)}</p>
     `;
   }
 

@@ -1,6 +1,7 @@
 {
   "name": "Keep",
   "short_name": "Keep",
+  "version": "0.1",
   "description": "A reading sanctuary for relationship and intimacy books.",
   "start_url": "./index.html",
   "scope": "./",
