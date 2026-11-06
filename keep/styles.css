@@ -321,7 +321,7 @@ button {
 .thesis,
 .prose {
   margin: 0 0 14px;
-  font-size: 0.98rem;
+  font-size: 1.078rem;
   line-height: 1.62;
   color: var(--ink);
   font-weight: 400;
@@ -331,7 +331,7 @@ button {
 .prose-cn,
 .cn-cn {
   font-family: var(--cn);
-  font-size: 0.95rem;
+  font-size: 1.045rem;
   line-height: 1.75;
   letter-spacing: 0.04em;
   color: var(--ink-dim);
@@ -374,7 +374,7 @@ button {
 .principle h3 {
   margin: 0;
   font-family: var(--sans);
-  font-size: 11px;
+  font-size: 12.1px;
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -383,14 +383,14 @@ button {
 .principle .concept {
   grid-column: 2;
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.45;
 }
 
 .principle .plain {
   grid-column: 2;
   margin: 4px 0 0;
-  font-size: 0.92rem;
+  font-size: 1.012rem;
   color: var(--ink-dim);
   line-height: 1.5;
 }
@@ -420,21 +420,21 @@ button {
 .east-quote {
   margin: 8px 0 6px;
   font-family: var(--cn);
-  font-size: 1.28rem;
+  font-size: 1.408rem;
   line-height: 1.7;
   letter-spacing: 0.08em;
 }
 
 .east-source {
   font-family: var(--cn);
-  font-size: 0.88rem;
+  font-size: 0.968rem;
   color: var(--ink-dim);
   margin: 0 0 16px;
 }
 
 .practice-prompt {
   margin: 0 0 18px;
-  font-size: 1.02rem;
+  font-size: 1.122rem;
   line-height: 1.55;
 }
 
