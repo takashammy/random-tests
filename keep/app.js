@@ -321,6 +321,13 @@
     renderDock();
   }
 
+  function spinePair(en, zh) {
+    return `<div class="spine-pair">
+      <span class="spine-en">${esc(en)}</span>
+      <span class="spine-cn cn-only">${esc(zh)}</span>
+    </div>`;
+  }
+
   function renderSpine() {
     const el = document.getElementById("spine");
     const t = ui();
@@ -328,28 +335,20 @@
     if (STATE.view === "reader") {
       const book = bookById(STATE.bookId);
       el.innerHTML = `
-        <span class="spine-cn cn-only">${esc(cn(book.durationCn))}</span>
-        <span class="spine-en">${esc(book.durationEn)}</span>
+        ${spinePair(book.durationEn, cn(book.durationCn))}
         <span class="spine-rule"></span>
-        <span class="spine-en">${esc(book.themeEn)}</span>
-        <span class="spine-cn cn-only">${esc(cn(book.themeCn))}</span>`;
+        ${spinePair(book.themeEn, cn(book.themeCn))}`;
       return;
     }
     if (STATE.view === "library") {
-      el.innerHTML = `
-        <span class="spine-en">Category</span>
-        <span class="spine-cn cn-only">${esc(catCn)}</span>`;
+      el.innerHTML = spinePair("Category", catCn);
       return;
     }
     if (STATE.view === "calendar") {
-      el.innerHTML = `
-        <span class="spine-en">${esc(t.month)}</span>
-        <span class="spine-cn cn-only">月</span>`;
+      el.innerHTML = spinePair(t.month, "月");
       return;
     }
-    el.innerHTML = `
-      <span class="spine-en">You</span>
-      <span class="spine-cn cn-only">我</span>`;
+    el.innerHTML = spinePair("You", "我");
   }
 
   function renderDock() {

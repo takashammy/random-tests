@@ -138,6 +138,13 @@ button {
   min-height: 0;
 }
 
+.spine-pair {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 6px;
+}
+
 .spine-en {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
