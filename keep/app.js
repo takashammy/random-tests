@@ -6,13 +6,15 @@
     read: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5h7.5A3.5 3.5 0 0 1 15 9v10.5H7.5A3.5 3.5 0 0 0 4 16V5.5z"/><path d="M20 5.5h-7.5A3.5 3.5 0 0 0 9 9v10.5h7.5A3.5 3.5 0 0 1 20 16V5.5z"/></svg>',
     library: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4.5h9.2a2.3 2.3 0 0 1 2.3 2.3V20l-5.4-2.4L6.7 20V6.8A2.3 2.3 0 0 1 9 4.5"/></svg>',
     calendar: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="6" width="16" height="14" rx="1.2"/><path d="M4 10h16M8 4v4M16 4v4"/></svg>',
-    you: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="3.1"/><path d="M6.2 19c1.4-2.6 3.4-3.9 5.8-3.9s4.4 1.3 5.8 3.9"/></svg>'
+    you: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="3.1"/><path d="M6.2 19c1.4-2.6 3.4-3.9 5.8-3.9s4.4 1.3 5.8 3.9"/></svg>',
+    fav: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.4S4.8 15.2 4.8 9.7A4.35 4.35 0 0 1 9.2 5.4c1.5 0 2.7.8 2.8 2 .2-1.2 1.4-2 2.8-2a4.35 4.35 0 0 1 4.4 4.3c0 5.5-7.2 10.7-7.2 10.7z"/></svg>'
   };
 
   /* Chrome is English-only. Chinese is editorial (titles, quotes, body, resonance). */
   const UI = {
     read: "Read",
     library: "Library",
+    favourites: "Favourites",
     calendar: "Calendar",
     you: "You",
     coreThesis: "Core thesis",
@@ -46,6 +48,9 @@
     emptyDay: "Nothing logged.",
     weeklyEmpty: "Nothing logged this week yet.",
     noBooks: "No books found",
+    noSaved: "No saved books yet.",
+    save: "Save",
+    saved: "Saved",
     weeklyNotePh: "Optional weekly note — private.",
     canon: "Shelf",
     month: "Month",
@@ -78,6 +83,7 @@
       calYear: now.getFullYear(),
       calMonth: now.getMonth(),
       logs: {},
+      saved: [],
       weeklyNote: "",
       gateId: null
     };
@@ -89,7 +95,9 @@
     try {
       const raw = localStorage.getItem(STORAGE);
       if (!raw) return defaultState();
-      return Object.assign(defaultState(), JSON.parse(raw));
+      const next = Object.assign(defaultState(), JSON.parse(raw));
+      if (!Array.isArray(next.saved)) next.saved = [];
+      return next;
     } catch {
       return defaultState();
     }
@@ -175,6 +183,20 @@
     if (!book) return false;
     if (STATE.membership === "pro" || book.isDailyFree) return true;
     return recentReadIds(FREE_REREAD).includes(book.id);
+  }
+
+  function savedIds() {
+    return Array.isArray(STATE.saved) ? STATE.saved : [];
+  }
+
+  function isSaved(id) {
+    return savedIds().includes(id);
+  }
+
+  function toggleSave(id) {
+    const cur = savedIds();
+    STATE.saved = cur.includes(id) ? cur.filter((x) => x !== id) : [id, ...cur];
+    save();
   }
 
   function isLoggedBook(id) {
@@ -311,6 +333,7 @@
     const parts = raw.split("/").filter(Boolean);
     const view = parts[0] || "read";
     if (view === "library") return { view: "library" };
+    if (view === "favourites" || view === "favorites") return { view: "favourites" };
     if (view === "calendar") return { view: "calendar" };
     if (view === "profile" || view === "you") return { view: "profile" };
     if (view === "read" || view === "reader") {
@@ -380,6 +403,10 @@
       el.innerHTML = spinePair("Category", catCn);
       return;
     }
+    if (STATE.view === "favourites") {
+      el.innerHTML = spinePair("Saved", "收藏");
+      return;
+    }
     if (STATE.view === "calendar") {
       el.innerHTML = spinePair(t.month, "月");
       return;
@@ -393,6 +420,7 @@
     const tabs = [
       ["reader", "read", t.read],
       ["library", "library", t.library],
+      ["favourites", "fav", t.favourites],
       ["calendar", "calendar", t.calendar],
       ["profile", "you", t.you]
     ];
@@ -411,6 +439,7 @@
     const root = document.getElementById("content");
     if (STATE.view === "reader") root.innerHTML = readerHTML();
     else if (STATE.view === "library") root.innerHTML = libraryHTML();
+    else if (STATE.view === "favourites") root.innerHTML = favouritesHTML();
     else if (STATE.view === "calendar") root.innerHTML = calendarHTML();
     else root.innerHTML = profileHTML();
   }
@@ -449,11 +478,13 @@
       )
       .join("");
 
+    const saved = isSaved(book.id);
     return `
       <header class="row-top">
         <div class="pills">
           <span class="pill">${esc(book.topLabelEn)} <span class="sep">|</span> ${esc(book.categoryEn)}</span>
         </div>
+        <button type="button" class="heart" data-save="${esc(book.id)}" aria-pressed="${saved ? "true" : "false"}" aria-label="${esc(saved ? t.saved : t.save)}">${ICONS.fav}</button>
       </header>
       <div class="title-block">
         <h1>${book.titleLinesEn.map((l) => esc(l)).join("<br>")}</h1>
@@ -568,6 +599,40 @@
       <div class="chips">${chips}</div>
       <input class="search" type="search" value="${esc(STATE.query)}" placeholder="${esc(t.searchPh)}" data-search>
       <ul class="catalog">${items || `<li class="quiet-note">${esc(t.noBooks)}</li>`}</ul>
+    `;
+  }
+
+  function favouritesHTML() {
+    const t = ui();
+    const bilingual = STATE.bilingual;
+    const books = savedIds()
+      .map((id) => BOOKS.find((b) => b.id === id))
+      .filter(Boolean);
+    const items = books
+      .map((b) => {
+        const logged = isLoggedBook(b.id);
+        let mark = "";
+        if (!canRead(b)) mark = `<span class="mark pro">${esc(t.pro)}</span>`;
+        else if (logged) mark = `<span class="mark">${esc(t.logged)} ✓</span>`;
+        return `
+        <li>
+          <button type="button" class="catalog-row" data-open="${esc(b.id)}">
+            <span>
+              <h2>${esc(b.titleFlatEn)}</h2>
+              ${bilingual ? `<p class="cn cn-only">${esc(cn(b.titleCn))}</p>` : ""}
+              <p class="by">${esc(b.authorLine)}</p>
+            </span>
+            ${mark}
+          </button>
+        </li>`;
+      })
+      .join("");
+
+    return `
+      <header class="row-top">
+        <div class="pills"><span class="pill">${esc(t.favourites)} <span class="sep">|</span> ${esc(t.saved)}</span></div>
+      </header>
+      <ul class="catalog">${items || `<li class="quiet-note">${esc(t.noSaved)}</li>`}</ul>
     `;
   }
 
@@ -727,7 +792,7 @@
   }
 
   function onAppClick(e) {
-    const el = e.target.closest("[data-go], [data-open], [data-extra], [data-practice], [data-filter], [data-day], [data-cal], [data-bilingual], [data-script], [data-mem], [data-export], [data-read-pro]");
+    const el = e.target.closest("[data-go], [data-open], [data-extra], [data-practice], [data-filter], [data-day], [data-cal], [data-bilingual], [data-script], [data-mem], [data-export], [data-read-pro], [data-save]");
     if (!el) return;
 
     if (el.hasAttribute("data-go")) {
@@ -737,6 +802,14 @@
     }
     if (el.hasAttribute("data-open")) {
       go("reader", el.getAttribute("data-open"));
+      return;
+    }
+    if (el.hasAttribute("data-save")) {
+      const id = el.getAttribute("data-save");
+      toggleSave(id);
+      const on = isSaved(id);
+      el.setAttribute("aria-pressed", on ? "true" : "false");
+      el.setAttribute("aria-label", on ? ui().saved : ui().save);
       return;
     }
     if (el.hasAttribute("data-read-pro")) {
