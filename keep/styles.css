@@ -684,36 +684,100 @@ button {
 }
 
 .inspector {
-  padding-top: 8px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
 }
 
-.inspector .when {
+.inspect-head {
   font-family: var(--sans);
-  font-size: 11px;
+  font-size: 9px;
+  font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  margin-bottom: 12px;
+  color: var(--ink-dim);
+  margin: 12px 0 8px;
 }
 
-.inspector .when span {
-  font-size: 1.6rem;
-  font-family: var(--serif);
-  letter-spacing: -0.03em;
-  margin-right: 8px;
+.inspect-head .slash {
+  opacity: 0.45;
+  margin: 0 6px;
+  letter-spacing: 0.08em;
 }
 
-.log-line {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 8px;
+.inspect-counts {
+  font-family: var(--sans);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 0 0 18px;
+}
+
+.inspect-counts .dot-sep {
+  opacity: 0.5;
+  margin: 0 4px;
+}
+
+.inspect-book {
+  margin: 0 0 22px;
+}
+
+.inspect-cat {
+  font-family: var(--sans);
+  font-size: 8px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin: 0 0 6px;
+}
+
+.inspect-title {
   margin: 0 0 8px;
-  font-size: 0.95rem;
-  align-items: baseline;
+  font-weight: 400;
+  font-size: 1.28rem;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
 }
 
-.log-note {
-  margin: 0 0 14px;
+.inspect-book .cn {
+  margin: 0 0 10px;
+  font-family: var(--cn);
+  font-size: 0.92rem;
+  letter-spacing: 0.08em;
+  color: var(--ink-dim);
+}
+
+.inspect-open {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink);
+  border-bottom: 1px solid var(--line-strong);
+  padding: 0 0 2px;
+  margin: 0 0 12px;
+}
+
+.inspect-open:hover {
+  color: var(--pollen);
+}
+
+.inspect-status {
+  font-family: var(--sans);
+  font-size: 8px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--pollen);
+  margin: 0 0 10px;
+}
+
+.inspect-note {
+  margin: 0;
   font-style: italic;
+  font-size: 0.98rem;
+  line-height: 1.5;
   color: var(--ink-dim);
 }
 

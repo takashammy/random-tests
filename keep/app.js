@@ -47,7 +47,14 @@
     weeklyEmpty: "Nothing logged this week yet.",
     weeklyNotePh: "Optional weekly note — private.",
     canon: "Shelf",
-    month: "Month"
+    month: "Month",
+    dateLog: "Selected date log",
+    openBook: "Open book",
+    statusPractice: "Status: practice completed",
+    statusRead: "Status: read",
+    statusNoted: "Status: noted",
+    readUnit: "Read",
+    appliedUnit: "Applied"
   };
 
   const MONTHS_CN = {
@@ -105,6 +112,13 @@
     return STATE.script === "sc" ? obj.sc : obj.tc;
   }
 
+  function quotedNote(note) {
+    const t = String(note || "").trim();
+    if (!t) return "";
+    if (/^[“"「『]/.test(t)) return t;
+    return `“${t}”`;
+  }
+
   function esc(s) {
     return String(s ?? "")
       .replace(/&/g, "&amp;")
@@ -126,11 +140,6 @@
     const m = String(d.getMonth() + 1).padStart(2, "0");
     const day = String(d.getDate()).padStart(2, "0");
     return `${y}-${m}-${day}`;
-  }
-
-  function parseIso(s) {
-    const [y, m, d] = s.split("-").map(Number);
-    return new Date(y, m - 1, d);
   }
 
   function todayIso() {
@@ -576,22 +585,27 @@
 
     const dayLogs = STATE.logs[selected] || {};
     const entries = Object.entries(dayLogs).filter(([, log]) => log.read || log.practice || (log.note && log.note.trim()));
-    const dt = parseIso(selected);
-    const when = `${dt.getDate()} ${dt.toLocaleString("en-US", { month: "short" }).toUpperCase()}`;
-
-    const inspect = entries.length
-      ? entries
-          .map(([id, log]) => {
-            const b = bookById(id);
-            return `
-            <div class="log-line">
-              <span>${esc(b.titleFlatEn)}</span>
-              <span class="mark">${log.practice || log.read ? esc(t.logged) : ""}</span>
-            </div>
-            ${log.note ? `<p class="log-note">${esc(log.note)}</p>` : ""}`;
-          })
-          .join("")
-      : `<p class="empty-inspect">${esc(t.emptyDay)}</p>`;
+    const nRead = entries.filter(([, log]) => log.read).length;
+    const nApplied = entries.filter(([, log]) => log.practice).length;
+    const books = entries
+      .map(([id, log]) => {
+        const b = bookById(id);
+        const status = log.practice ? t.statusPractice : log.read ? t.statusRead : t.statusNoted;
+        const note =
+          log.note && log.note.trim()
+            ? `<blockquote class="inspect-note">${esc(quotedNote(log.note))}</blockquote>`
+            : "";
+        return `
+        <article class="inspect-book">
+          <p class="inspect-cat">${esc(b.categoryEn)}</p>
+          <h2 class="inspect-title">${esc(b.titleFlatEn)}</h2>
+          ${STATE.bilingual ? `<p class="cn cn-only">${esc(cn(b.titleCn))}</p>` : ""}
+          <button type="button" class="inspect-open" data-open="${esc(b.id)}">${esc(t.openBook)}</button>
+          <p class="inspect-status">${esc(status)}</p>
+          ${note}
+        </article>`;
+      })
+      .join("");
 
     return `
       <header class="row-top">
@@ -609,8 +623,9 @@
         <tbody>${rows}</tbody>
       </table>
       <div class="inspector">
-        <p class="when"><span>${esc(String(dt.getDate()).padStart(2, " "))}</span>${esc(when.split(" ")[1] || "")}</p>
-        ${inspect}
+        <p class="inspect-head">${esc(t.dateLog)} <span class="slash">//</span> ${esc(selected)}</p>
+        <p class="inspect-counts">${nRead} ${esc(t.readUnit)} <span class="dot-sep">·</span> ${nApplied} ${esc(t.appliedUnit)}</p>
+        ${books || `<p class="empty-inspect">${esc(t.emptyDay)}</p>`}
       </div>
     `;
   }
