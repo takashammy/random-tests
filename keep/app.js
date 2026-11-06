@@ -40,8 +40,6 @@
     free: "Free daily",
     proMem: "Pro library",
     disclaimer: "This is a reading sanctuary, not therapy. Nothing here is a diagnosis, a couple’s program, or a substitute for care.",
-    firstRun: "A quiet room for relationship books. Practices work for one person. Notes stay private on this device.",
-    continue: "Continue",
     gate: "This book sits in the Pro library. The rest of the shelf is visible; membership lives under You.",
     goYou: "Open You",
     readAsPro: "Read as Pro",
@@ -71,7 +69,6 @@
       selectedDate: isoDate(now),
       calYear: now.getFullYear(),
       calMonth: now.getMonth(),
-      seenDisclaimer: false,
       logs: {},
       weeklyNote: "",
       gateId: null
@@ -418,7 +415,6 @@
       .join("");
 
     return `
-      ${STATE.seenDisclaimer ? "" : `<aside class="first-run">${esc(t.firstRun)}<button type="button" data-dismiss-first>${esc(t.continue)}</button></aside>`}
       <header class="row-top">
         <div class="pills">
           <span class="pill">${esc(book.topLabelEn)} <span class="sep">|</span> ${esc(book.categoryEn)}</span>
@@ -685,15 +681,9 @@
   }
 
   function onAppClick(e) {
-    const el = e.target.closest("[data-go], [data-open], [data-extra], [data-practice], [data-filter], [data-day], [data-cal], [data-bilingual], [data-script], [data-mem], [data-export], [data-dismiss-first], [data-read-pro]");
+    const el = e.target.closest("[data-go], [data-open], [data-extra], [data-practice], [data-filter], [data-day], [data-cal], [data-bilingual], [data-script], [data-mem], [data-export], [data-read-pro]");
     if (!el) return;
 
-    if (el.hasAttribute("data-dismiss-first")) {
-      STATE.seenDisclaimer = true;
-      save();
-      render();
-      return;
-    }
     if (el.hasAttribute("data-go")) {
       const view = el.getAttribute("data-go");
       go(view, view === "reader" ? STATE.bookId : undefined);
