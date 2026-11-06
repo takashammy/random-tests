@@ -327,23 +327,32 @@
   function renderSpine() {
     const el = document.getElementById("spine");
     const t = ui();
+    const catCn = STATE.script === "sc" ? "类别" : "類別";
     if (STATE.view === "reader") {
       const book = bookById(STATE.bookId);
       el.innerHTML = `
+        <span class="spine-cn cn-only">${esc(cn(book.durationCn))}</span>
         <span class="spine-en">${esc(book.durationEn)}</span>
         <span class="spine-rule"></span>
-        <span class="spine-en">${esc(book.themeEn)}</span>`;
+        <span class="spine-en">${esc(book.themeEn)}</span>
+        <span class="spine-cn cn-only">${esc(cn(book.themeCn))}</span>`;
       return;
     }
     if (STATE.view === "library") {
-      el.innerHTML = `<span class="spine-en">Category</span>`;
+      el.innerHTML = `
+        <span class="spine-en">Category</span>
+        <span class="spine-cn cn-only">${esc(catCn)}</span>`;
       return;
     }
     if (STATE.view === "calendar") {
-      el.innerHTML = `<span class="spine-en">${esc(t.month)}</span>`;
+      el.innerHTML = `
+        <span class="spine-en">${esc(t.month)}</span>
+        <span class="spine-cn cn-only">月</span>`;
       return;
     }
-    el.innerHTML = `<span class="spine-en">You</span>`;
+    el.innerHTML = `
+      <span class="spine-en">You</span>
+      <span class="spine-cn cn-only">我</span>`;
   }
 
   function renderDock() {
