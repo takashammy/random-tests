@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Luminary">
+  <rect width="512" height="512" fill="#FAF6EE"/>
+  <rect x="36" y="36" width="440" height="440" fill="none" stroke="#2C2A28" stroke-width="2"/>
+  <rect x="56" y="56" width="400" height="400" fill="none" stroke="#DCD7CD" stroke-width="1"/>
+  <line x1="120" y1="56" x2="120" y2="456" stroke="#2C2A28" stroke-width="1"/>
+  <text x="88" y="420" font-family="Georgia, serif" font-size="28" fill="#181715" transform="rotate(-90 88 420)" letter-spacing="6">LUMINARY</text>
+  <text x="176" y="248" font-family="Noto Serif TC, Georgia, serif" font-size="168" fill="#181715">±</text>
+  <text x="176" y="400" font-family="Georgia, serif" font-size="22" fill="#181715" letter-spacing="8">Ã</text>
+</svg>
