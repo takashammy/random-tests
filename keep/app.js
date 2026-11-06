@@ -461,11 +461,7 @@
           ? `<section class="module cn-only" id="east">
         <div class="module-head">
           <p class="kicker">${esc(t.east)}</p>
-          <span class="pill">03 Eastern resonance</span>
         </div>
-        <h2 class="month-name" style="font-size:2rem;margin-bottom:4px">Eastern Resonance</h2>
-        <p class="title-cn">${STATE.script === "sc" ? "东方共鸣" : "東方共鳴"}</p>
-        <div class="ornament"><span class="dot"></span></div>
         <p class="east-quote">${esc(cn(book.easternResonance.quote))}</p>
         <p class="east-source">${esc(cn(book.easternResonance.source))}</p>
         <p class="prose-cn">${esc(cn(book.easternResonance.commentary))}</p>
