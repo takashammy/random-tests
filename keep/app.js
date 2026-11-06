@@ -146,12 +146,38 @@
     return isoDate(new Date());
   }
 
+  const FREE_REREAD = 7;
+
+  function isActiveLog(log) {
+    return !!(log && (log.read || log.practice || (log.note && String(log.note).trim())));
+  }
+
+  function recentReadIds(limit) {
+    const latest = new Map();
+    let seq = 0;
+    Object.keys(STATE.logs)
+      .sort()
+      .forEach((date) => {
+        const day = STATE.logs[date];
+        Object.keys(day).forEach((id) => {
+          if (!isActiveLog(day[id])) return;
+          latest.set(id, seq++);
+        });
+      });
+    return [...latest.entries()]
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, limit)
+      .map(([id]) => id);
+  }
+
   function canRead(book) {
-    return book.isDailyFree || STATE.membership === "pro";
+    if (!book) return false;
+    if (STATE.membership === "pro" || book.isDailyFree) return true;
+    return recentReadIds(FREE_REREAD).includes(book.id);
   }
 
   function isLoggedBook(id) {
-    return Object.values(STATE.logs).some((day) => day[id] && (day[id].read || day[id].practice || (day[id].note && day[id].note.trim())));
+    return Object.values(STATE.logs).some((day) => isActiveLog(day[id]));
   }
 
   function logFor(date, bookId) {
@@ -189,7 +215,7 @@
       const day = STATE.logs[d];
       if (!day) return;
       Object.entries(day).forEach(([id, log]) => {
-        if (log.read || log.practice || (log.note && log.note.trim())) {
+        if (isActiveLog(log)) {
           books.add(id);
           rows.push({ date: d, id, log });
         }
@@ -504,10 +530,9 @@
     const items = filteredBooks()
       .map((b) => {
         const logged = isLoggedBook(b.id);
-        const pro = !b.isDailyFree;
         let mark = "";
-        if (logged) mark = `<span class="mark">${esc(t.logged)} ✓</span>`;
-        else if (pro && STATE.membership !== "pro") mark = `<span class="mark pro">${esc(t.pro)}</span>`;
+        if (!canRead(b)) mark = `<span class="mark pro">${esc(t.pro)}</span>`;
+        else if (logged) mark = `<span class="mark">${esc(t.logged)} ✓</span>`;
         return `
         <li>
           <button type="button" class="catalog-row" data-open="${esc(b.id)}">
@@ -580,7 +605,7 @@
     }
 
     const dayLogs = STATE.logs[selected] || {};
-    const entries = Object.entries(dayLogs).filter(([, log]) => log.read || log.practice || (log.note && log.note.trim()));
+    const entries = Object.entries(dayLogs).filter(([, log]) => isActiveLog(log));
     const nRead = entries.filter(([, log]) => log.read).length;
     const nApplied = entries.filter(([, log]) => log.practice).length;
     const books = entries
@@ -629,13 +654,23 @@
   function profileHTML() {
     const t = ui();
     const stats = weekStats();
-    const titles = [];
+    const ids = [];
     stats.rows.forEach((r) => {
-      const name = bookById(r.id).titleFlatEn;
-      if (!titles.includes(name)) titles.push(name);
+      if (!ids.includes(r.id)) ids.push(r.id);
     });
-    const list = titles.length
-      ? `<ul class="week-list">${titles.map((n) => `<li>${esc(n)}</li>`).join("")}</ul>`
+    const list = ids.length
+      ? `<ul class="week-list">${ids
+          .map((id) => {
+            const b = bookById(id);
+            const locked = !canRead(b);
+            return `<li>
+          <button type="button" class="week-open" data-open="${esc(id)}">
+            <span>${esc(b.titleFlatEn)}</span>
+            ${locked ? `<span class="mark pro">${esc(t.pro)}</span>` : ""}
+          </button>
+        </li>`;
+          })
+          .join("")}</ul>`
       : `<p class="empty-inspect">${esc(t.weeklyEmpty)}</p>`;
 
     return `
@@ -700,16 +735,7 @@
       return;
     }
     if (el.hasAttribute("data-open")) {
-      const id = el.getAttribute("data-open");
-      const book = bookById(id);
-      if (!canRead(book)) {
-        STATE.gateId = id;
-        save();
-        render();
-        document.getElementById("content")?.scrollTo(0, 0);
-        return;
-      }
-      go("reader", id);
+      go("reader", el.getAttribute("data-open"));
       return;
     }
     if (el.hasAttribute("data-read-pro")) {

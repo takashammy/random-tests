@@ -961,6 +961,20 @@ button {
   font-size: 0.92rem;
 }
 
+.week-open {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  padding: 0;
+}
+
+.week-open:hover span:first-child {
+  color: var(--pollen);
+}
+
 html.en-only .cn-only {
   display: none !important;
 }
