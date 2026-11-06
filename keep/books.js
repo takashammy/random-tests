@@ -1,4 +1,4 @@
-/* Keep 0.1 — original editorial. Quote then layman; Chinese is the same idea, twice. */
+/* Keep 0.1 — original editorial. Claim first, then a 15-year-old explanation. */
 window.BOOKS = [
   {
     id: "courage-to-be-disliked",
@@ -18,49 +18,49 @@ window.BOOKS = [
     authorLine: "Ichiro Kishimi & Fumitake Koga (2013)",
     quoteEn: "“Freedom is being disliked by other people.”",
     quoteCn: { tc: "「自由，就是被別人討厭。」", sc: "“自由，就是被别人讨厌。”" },
-    leadEn: "Intimacy starts when you stop borrowing your worth from the face across the table.",
+    leadEn: "Stop using their face to decide if you are okay.",
     leadCn: {
-      tc: "親密從這一刻起：你不再拿對面那張臉，來證明自己值不值得。",
-      sc: "亲密从这一刻起：你不再拿对面那张脸，来证明自己值不值得。"
+      tc: "別再用對方的臉色，來判斷自己好不好。",
+      sc: "别再用对方的脸色，来判断自己好不好。"
     },
     thesisEn:
-      "Adler’s separation of tasks is a strange kindness in love. The moment you take another person’s feeling as your homework, you stop meeting them — you start managing them. Courage here is not swagger. It is staying near someone without using their approval as a railing on the stairs.",
+      "This book’s idea is simple: you have your job, they have theirs. Your job is what you say and do. Their job is how they feel about it. If you spend the night managing their mood, you are not with them — you are babysitting their feelings. Courage is staying near someone even if they might not like you today.",
     thesisCn: {
-      tc: "阿德勒的課題分離，用在愛情裡，是一種古怪的善意。你一旦把對方的心情當成自己的功課，遇見就停了，剩下的只是管理。這裡的勇氣不是張揚，是能靠近一個人，卻不把對方的認可當成扶手。",
-      sc: "阿德勒的课题分离，用在爱情里，是一种古怪的善意。你一旦把对方的心情当成自己的功课，遇见就停了，剩下的只是管理。这里的勇气不是张扬，是能靠近一个人，却不把对方的认可当成扶手。"
+      tc: "這本書的意思很簡單：你有你的事，對方有對方的事。你負責自己說什麼、做什麼。對方開不開心，是對方的事。如果你整晚都在管對方的心情，你就不是在跟人相處，是在看管對方的情緒。這裡的勇氣，是對方今天未必喜歡你，你也還能待在旁邊。",
+      sc: "这本书的意思很简单：你有你的事，对方有对方的事。你负责自己说什么、做什么。对方开不开心，是对方的事。如果你整晚都在管对方的心情，你就不是在跟人相处，是在看管对方的情绪。这里的勇气，是对方今天未必喜欢你，你也还能待在旁边。"
     },
     highlights: [
       {
         num: "01",
         titleEn: "TASKS",
-        titleCn: { tc: "課題", sc: "课题" },
-        conceptEn: "Your task is how you love. Their task is how they receive you.",
-        plainEn: "You’re at the sink, rewriting a text so they won’t go quiet. That’s you doing their homework. Their face is not yours to wash.",
+        titleCn: { tc: "各做各的", sc: "各做各的" },
+        conceptEn: "Your job is how you love. Their job is how they take it.",
+        plainEn: "You rewrite a text three times so they won’t get mad. Their mood is not your homework. Send the short true one, or put the phone down.",
         plainCn: {
-          tc: "課題分家。你在水槽邊改了三遍消息，生怕對方不回——那是在替人家做作業。對面的臉色，不是你的家務。",
-          sc: "课题分家。你在水槽边改了三遍消息，生怕对方不回——那是在替人家做作业。对面的脸色，不是你的家务。"
+          tc: "你把一條消息改了三遍，怕對方生氣。對方開不開心，不是你的作業。把短的那句發出去，或者先放下手機。",
+          sc: "你把一条消息改了三遍，怕对方生气。对方开不开心，不是你的作业。把短的那句发出去，或者先放下手机。"
         }
       },
       {
         num: "02",
         titleEn: "COMMUNITY",
-        titleCn: { tc: "共同體", sc: "共同体" },
-        conceptEn: "Belonging is horizontal. Fusion is a ranking dressed as closeness.",
-        plainEn: "On the walk home you can match their step without climbing into their head to rearrange the furniture.",
+        titleCn: { tc: "並排", sc: "并排" },
+        conceptEn: "Being close means standing next to someone, not climbing inside them.",
+        plainEn: "You can walk home together and still let them keep their own thoughts. You don’t have to fix what’s in their head.",
         plainCn: {
-          tc: "真正的在一起是平視，不是爬進對方心裡去挪家具。走路回家，步伐可以齊，頭腦不必併成一間。",
-          sc: "真正的在一起是平视，不是爬进对方心里去挪家具。走路回家，步伐可以齐，头脑不必并成一间。"
+          tc: "靠近是走在旁邊，不是鑽進對方腦子裡。可以一起走路回家，對方怎麼想，不必你來改。",
+          sc: "靠近是走在旁边，不是钻进对方脑子里。可以一起走路回家，对方怎么想，不必你来改。"
         }
       },
       {
         num: "03",
         titleEn: "THIS MOMENT",
         titleCn: { tc: "此刻", sc: "此刻" },
-        conceptEn: "Lifestyle is chosen today, not inherited from last night’s fight.",
-        plainEn: "The old argument can explain why your chest tightened in the kitchen. It does not get to finish tonight’s sentence.",
+        conceptEn: "How you act today is a choice. Last night’s fight does not get to run tonight.",
+        plainEn: "You can still be cold because of yesterday. You can also wash the dishes and speak in a normal voice tonight.",
         plainCn: {
-          tc: "活法是今天選的，不是昨夜那場架留下的遺產。舊帳能解釋你在廚房裡為什麼胸口一緊，卻沒資格寫完今晚這句話。",
-          sc: "活法是今天选的，不是昨夜那场架留下的遗产。旧账能解释你在厨房里为什么胸口一紧，却没资格写完今晚这句话。"
+          tc: "你今天怎麼做，是今天選的。昨晚吵架，不能接著指揮今晚。可以還在生氣，也可以去洗碗，用平常的聲音說話。",
+          sc: "你今天怎么做，是今天选的。昨晚吵架，不能接着指挥今晚。可以还在生气，也可以去洗碗，用平常的声音说话。"
         }
       }
     ],
@@ -68,45 +68,45 @@ window.BOOKS = [
       {
         num: "04",
         titleEn: "Inferiority as movement",
-        titleCn: { tc: "自卑可以是方向", sc: "自卑可以是方向" },
-        conceptEn: "The ache to be enough can become a direction, not a verdict on whether you are lovable.",
-        plainEn: "Wanting to cook better, speak clearer, sleep earlier — that is movement. Begging the relationship to stamp you “enough” is a different errand.",
+        titleCn: { tc: "不完美也可以往前", sc: "不完美也可以往前" },
+        conceptEn: "Feeling “not enough” can push you to grow. It should not be a vote on whether you are lovable.",
+        plainEn: "Wanting to talk more clearly is fine. Needing them to say “you’re enough” every night is a different ask.",
         plainCn: {
-          tc: "想把飯做得好些、話講得清楚些，是在走。求這段關係蓋章證明你「夠了」，是另一趟差事。",
-          sc: "想把饭做得好些、话讲得清楚些，是在走。求这段关系盖章证明你“够了”，是另一趟差事。"
+          tc: "想把話講清楚，沒問題。每天晚上都要對方說「你夠好了」，是另一回事。",
+          sc: "想把话讲清楚，没问题。每天晚上都要对方说“你够好了”，是另一回事。"
         }
       },
       {
         num: "05",
         titleEn: "Horizontal pairing",
-        titleCn: { tc: "平視的兩人", sc: "平视的两人" },
-        conceptEn: "Praise and blame are both ladders. Intimacy prefers the floor.",
-        plainEn: "If you only feel close when you are being graded — good partner, bad partner — you are not close. You are in class.",
+        titleCn: { tc: "不要當評委", sc: "不要当评委" },
+        conceptEn: "Praise and blame are both scoreboards. Closeness does not need a grade.",
+        plainEn: "If you only feel close when they call you a good boyfriend or girlfriend, you are waiting for a mark, not a person.",
         plainCn: {
-          tc: "稱讚和責罵都是梯子。親密更喜歡地板。只有被打分時才覺得近，那不是近，是上課。",
-          sc: "称赞和责骂都是梯子。亲密更喜欢地板。只有被打分时才觉得近，那不是近，是上课。"
+          tc: "稱讚和責罵都是打分。真正靠近，不必等人打分。只有被說「你好」才覺得近，你等的是分數，不是那個人。",
+          sc: "称赞和责骂都是打分。真正靠近，不必等人打分。只有被说“你好”才觉得近，你等的是分数，不是那个人。"
         }
       },
       {
         num: "06",
         titleEn: "The leash of being liked",
-        titleCn: { tc: "被喜歡的繩子", sc: "被喜欢的绳子" },
-        conceptEn: "Chasing approval is a way of leaving yourself in order to keep the other.",
-        plainEn: "Notice the sentence you almost said at the table, then swallowed to stay easy to love.",
+        titleCn: { tc: "為了被喜歡", sc: "为了被喜欢" },
+        conceptEn: "If you drop yourself to stay liked, you are not really there.",
+        plainEn: "You almost say “that hurt,” then swallow it so dinner stays nice. Write the sentence down. You don’t have to send it.",
         plainCn: {
-          tc: "為了被喜歡而離開自己，繩子就在這裡。留意那句在飯桌上幾乎出口、又咽回去的話。",
-          sc: "为了被喜欢而离开自己，绳子就在这里。留意那句在饭桌上几乎出口、又咽回去的话。"
+          tc: "為了被喜歡，把真心話咽回去，人其實已經不在了。那句「這讓我難受」差點出口，又為了晚飯好看咽回去。先寫下來，不必發出。",
+          sc: "为了被喜欢，把真心话咽回去，人其实已经不在了。那句“这让我难受”差点出口，又为了晚饭好看咽回去。先写下来，不必发出。"
         }
       },
       {
         num: "07",
         titleEn: "Contribution over performance",
-        titleCn: { tc: "貢獻先於表演", sc: "贡献先于表演" },
-        conceptEn: "A pair is healthier when each person brings a gift, not an audition.",
-        plainEn: "Ask, on the walk home: did I offer something real, or did I try to be chosen again?",
+        titleCn: { tc: "給出，不是表演", sc: "给出，不是表演" },
+        conceptEn: "Bring something real. Don’t audition to be picked again.",
+        plainEn: "On the way home, ask: did I actually help, or did I just try to look easy to love?",
         plainCn: {
-          tc: "兩人更好的樣子，是各帶一份禮物，不是各演一場選角。走路回家時問一句：這一回，我是真的給出了什麼，還是又在爭取被選中？",
-          sc: "两人更好的样子，是各带一份礼物，不是各演一场选角。走路回家时问一句：这一回，我是真的给出了什么，还是又在争取被选中？"
+          tc: "真的給出一點東西，別再演一場「快選我」。走路回家時問一句：我是真幫了忙，還是只想看起來好愛？",
+          sc: "真的给出一点东西，别再演一场“快选我”。走路回家时问一句：我是真帮了忙，还是只想看起来好爱？"
         }
       }
     ],
@@ -120,15 +120,15 @@ window.BOOKS = [
         sc: "——龙应台《目送》"
       },
       commentary: {
-        tc: "目送不是冷淡，是把對方的路還給對方。阿德勒所說的課題分離，在這篇散文裡變成一個背影：你可以站在路口，不必追上去改他們怎麼走。親密裡的勇氣，常常是肯目送。",
-        sc: "目送不是冷淡，是把对方的路还给对方。阿德勒所说的课题分离，在这篇散文里变成一个背影：你可以站在路口，不必追上去改他们怎么走。亲密里的勇气，常常是肯目送。"
+        tc: "目送，就是看著對方走，不去追上去改路。這本書也是這個意思：對方怎麼走，是對方的事。你可以站在路口。親密有時就是肯目送。",
+        sc: "目送，就是看着对方走，不去追上去改路。这本书也是这个意思：对方怎么走，是对方的事。你可以站在路口。亲密有时就是肯目送。"
       }
     },
     actionPromptEn:
-      "Once today, catch one sentence you swallowed to stay likable. Write it in the journal. Do not send it. Two minutes at the table is enough.",
+      "Catch one sentence you swallowed today so they would still like you. Write it in the journal. Don’t send it. Two minutes is enough.",
     actionPromptCn: {
-      tc: "今天只做一次：捉住那句為了討人喜歡而咽回去的話，寫進日記。不要發出。在桌邊兩分鐘就夠。",
-      sc: "今天只做一次：捉住那句为了讨人喜欢而咽回去的话，写进日记。不要发出。在桌边两分钟就够。"
+      tc: "今天捉住一句：你為了讓人喜歡而咽回去的話。寫進日記。不要發出。兩分鐘就夠。",
+      sc: "今天捉住一句：你为了让人喜欢而咽回去的话。写进日记。不要发出。两分钟就够。"
     }
   },
   {
@@ -148,50 +148,50 @@ window.BOOKS = [
     titleCn: { tc: "愛的藝術", sc: "爱的艺术" },
     authorLine: "Erich Fromm (1956)",
     quoteEn: "“Love is an activity, not a passive affect.”",
-    quoteCn: { tc: "「愛是一種主動的活動，而不是被動的情感。」", sc: "“爱是一种主动的活动，而不是被动的情感。”" },
-    leadEn: "Love is not the luck of being chosen. It is a craft of care you can practice alone.",
+    quoteCn: { tc: "「愛是一種行動，不是等來的感覺。」", sc: "“爱是一种行动，不是等来的感觉。”" },
+    leadEn: "Love is not winning someone. It is care you can practice, even alone.",
     leadCn: {
-      tc: "愛不是被選中的運氣，而是一門照料的手藝，一個人也能練。",
-      sc: "爱不是被选中的运气，而是一门照料的手艺，一个人也能练。"
+      tc: "愛不是把人追到手。愛是照料，一個人也能練。",
+      sc: "爱不是把人追到手。爱是照料，一个人也能练。"
     },
     thesisEn:
-      "Fromm’s claim is almost unfashionable: love is labor — care, responsibility, respect, knowledge — four muscles that weaken if you only wait to feel them. In a culture that treats chemistry as a verdict, this book is a workshop. You can be unpartnered and still be in training.",
+      "This book says love is work you can learn: care, showing up, respect, and actually knowing the person. Waiting to “feel it” is like waiting to feel like a pianist before you touch the keys. You can be single and still practice.",
     thesisCn: {
-      tc: "弗洛姆幾乎不合時宜：愛是勞動——關心、責任、尊重、認識——四塊肌肉，只等「感覺來了」就會鬆。把化學反應當成判決的風氣裡，這本書是一間工坊。沒有伴侶，你仍可以在練。",
-      sc: "弗洛姆几乎不合时宜：爱是劳动——关心、责任、尊重、认识——四块肌肉，只等“感觉来了”就会松。把化学反应当成判决的风气里，这本书是一间工坊。没有伴侣，你仍可以在练。"
+      tc: "這本書說，愛是可以學的：關心、出現、尊重、真的去了解對方。等「感覺來了」再愛，像等自己覺得像鋼琴家了才碰琴鍵。沒有對象，也可以先練。",
+      sc: "这本书说，爱是可以学的：关心、出现、尊重、真的去了解对方。等“感觉来了”再爱，像等自己觉得像钢琴家了才碰琴键。没有对象，也可以先练。"
     },
     highlights: [
       {
         num: "01",
         titleEn: "ART",
-        titleCn: { tc: "技藝", sc: "技艺" },
-        conceptEn: "“Love is an art,” Fromm says — and an art asks for practice before it offers rapture.",
-        plainEn: "You do not wait to feel like a pianist before you wash the cup, send the weather text, or fold the towel. The hand moves first.",
+        titleCn: { tc: "要練", sc: "要练" },
+        conceptEn: "Love is a skill. Skills get better with practice, not with waiting.",
+        plainEn: "Don’t wait to feel loving before you wash a cup or send “did you eat?” Do the small thing first.",
         plainCn: {
-          tc: "愛是技藝，得先練，才輪到陶醉。不必等自己「覺得像會愛的人了」，才去洗那隻杯子、發一句天氣、把毛巾疊好。手先動。",
-          sc: "爱是技艺，得先练，才轮到陶醉。不必等自己“觉得像会爱的人了”，才去洗那只杯子、发一句天气、把毛巾叠好。手先动。"
+          tc: "愛跟別的本事一樣，是練出來的，不是等來的。不必等心裡發熱，再去洗碗、問一句「吃飯了嗎」。先做小事。",
+          sc: "爱跟别的本事一样，是练出来的，不是等来的。不必等心里发热，再去洗碗、问一句“吃饭了吗”。先做小事。"
         }
       },
       {
         num: "02",
         titleEn: "MIRROR",
         titleCn: { tc: "鏡子", sc: "镜子" },
-        conceptEn: "Infantile love uses the other as a polished surface: I love because I am loved.",
-        plainEn: "If they only shine when they confirm you — in the group chat, at dinner — you have not met them yet. You have met your reflection.",
+        conceptEn: "Using someone as a mirror is not love. That is “I like you when you like me.”",
+        plainEn: "If they only matter when they like your photo, you are looking at your own reflection, not at them.",
         plainCn: {
-          tc: "幼稚的愛把對方當成鏡子：我愛，因為我被愛。若對方只有在證實你時才發光——群聊裡、飯桌上——你還沒遇見這個人，只遇見了自己的反光。",
-          sc: "幼稚的爱把对方当成镜子：我爱，因为我被爱。若对方只有在证实你时才发光——群聊里、饭桌上——你还没遇见这个人，只遇见了自己的反光。"
+          tc: "把對方當鏡子，不是愛，是「你喜歡我，我才喜歡你」。如果對方只在給你點讚時才重要，你看的是自己，不是這個人。",
+          sc: "把对方当镜子，不是爱，是“你喜欢我，我才喜欢你”。如果对方只在给你点赞时才重要，你看的是自己，不是这个人。"
         }
       },
       {
         num: "03",
         titleEn: "FAITH",
-        titleCn: { tc: "信", sc: "信" },
-        conceptEn: "Love’s faith is a standing-toward that precedes mood.",
-        plainEn: "Show up to the ordinary care — the kettle, the reply, the walk to the door — before the feeling arrives to applaud you.",
+        titleCn: { tc: "先做", sc: "先做" },
+        conceptEn: "Show up before the mood arrives.",
+        plainEn: "Reply to the message. Walk them to the door. Do it even if you don’t feel warm yet.",
         plainCn: {
-          tc: "愛的信心，是感覺還沒來鼓掌，你仍朝那個人站著。先去管水壺、回那條消息、送到門口。平凡的照料在前。",
-          sc: "爱的信心，是感觉还没来鼓掌，你仍朝那个人站着。先去管水壶、回那条消息、送到门口。平凡的照料在前。"
+          tc: "感覺還沒來，也可以先出現。回那條消息，送到門口。心還沒熱，手可以先動。",
+          sc: "感觉还没来，也可以先出现。回那条消息，送到门口。心还没热，手可以先动。"
         }
       }
     ],
@@ -199,45 +199,45 @@ window.BOOKS = [
       {
         num: "04",
         titleEn: "Care without possession",
-        titleCn: { tc: "關心而不佔有", sc: "关心而不占有" },
-        conceptEn: "To care is to want the other to live — not to live as your object.",
-        plainEn: "Ask whether your help in the kitchen leaves them more themselves, or more yours.",
+        titleCn: { tc: "關心，不是佔有", sc: "关心，不是占有" },
+        conceptEn: "Care wants them to be okay. It does not want to own them.",
+        plainEn: "Helping with homework is care. Doing it for them so they need you is owning.",
         plainCn: {
-          tc: "問一問：你在廚房裡的幫忙，是讓對方更像自己，還是更像你的所有物。",
-          sc: "问一问：你在厨房里的帮忙，是让对方更像自己，还是更像你的所有物。"
+          tc: "幫忙寫功課是關心。替對方寫完，好讓對方離不開你，是佔有。",
+          sc: "帮忙写功课是关心。替对方写完，好让对方离不开你，是占有。"
         }
       },
       {
         num: "05",
         titleEn: "Responsibility as response",
-        titleCn: { tc: "責任即回應", sc: "责任即回应" },
-        conceptEn: "Responsibility is the ability to respond, not the right to control.",
-        plainEn: "You can answer a need — a tired look, an empty fridge — without annexing the person who has it.",
+        titleCn: { tc: "回應，不是接管", sc: "回应，不是接管" },
+        conceptEn: "Being responsible means you answer. It does not mean you take over.",
+        plainEn: "They look tired. You can make toast. You don’t get to run their whole night.",
         plainCn: {
-          tc: "責任是能回應，不是有權接管。你可以應答一個需要——疲倦的眼神、空了的冰箱——而不把有需要的人吞掉。",
-          sc: "责任是能回应，不是有权接管。你可以应答一个需要——疲倦的眼神、空了的冰箱——而不把有需要的人吞掉。"
+          tc: "對方累了，你可以去烤片麵包。不能因此把對方整晚都管起來。",
+          sc: "对方累了，你可以去烤片面包。不能因此把对方整晚都管起来。"
         }
       },
       {
         num: "06",
         titleEn: "Respect as otherness",
-        titleCn: { tc: "尊重即他者", sc: "尊重即他者" },
-        conceptEn: "Respect means the other remains other — a person, not a role in your plot.",
-        plainEn: "Leave one preference of theirs unimproved today: the way they make tea, the show they like, the slow morning.",
+        titleCn: { tc: "對方是另一個人", sc: "对方是另一个人" },
+        conceptEn: "Respect means they get to be themselves, not a character in your story.",
+        plainEn: "Today, don’t “improve” one thing they like: their playlist, their tea, their slow morning.",
         plainCn: {
-          tc: "尊重是讓對方仍是對方，不是你劇本裡的角色。今天留下一個癖好不去改良：他們泡茶的方法、愛看的片子、緩慢的早晨。",
-          sc: "尊重是让对方仍是对方，不是你剧本里的角色。今天留下一个癖好不去改良：他们泡茶的方法、爱看的片子、缓慢的早晨。"
+          tc: "尊重就是讓對方做自己，不是你劇本裡的角色。今天別改他們喜歡的東西：歌單、泡茶方式、慢吞吞的早晨。",
+          sc: "尊重就是让对方做自己，不是你剧本里的角色。今天别改他们喜欢的东西：歌单、泡茶方式、慢吞吞的早晨。"
         }
       },
       {
         num: "07",
         titleEn: "Knowledge that is not surveillance",
-        titleCn: { tc: "認識不是監視", sc: "认识不是监视" },
-        conceptEn: "To know someone is to see them unfolding, not to collect evidence.",
-        plainEn: "One question on the walk home that you do not already know the answer to. Curiosity, not a case file.",
+        titleCn: { tc: "想了解，不是查崗", sc: "想了解，不是查岗" },
+        conceptEn: "Knowing someone is asking. It is not checking their phone.",
+        plainEn: "On the walk home, ask one thing you don’t already know. Then listen.",
         plainCn: {
-          tc: "認識是看著一個人自己展開，不是蒐集呈堂證供。走路回家時，問一個你並不知道答案的問題。是好奇，不是案卷。",
-          sc: "认识是看着一个人自己展开，不是搜集呈堂证供。走路回家时，问一个你并不知道答案的问题。是好奇，不是案卷。"
+          tc: "了解一個人，是問、是聽，不是翻手機。走路回家時，問一個你還不知道答案的問題，然後聽。",
+          sc: "了解一个人，是问、是听，不是翻手机。走路回家时，问一个你还不知道答案的问题，然后听。"
         }
       }
     ],
@@ -251,15 +251,15 @@ window.BOOKS = [
         sc: "——蒋勋《孤独六讲》"
       },
       commentary: {
-        tc: "弗洛姆說愛是技藝，蔣勳說孤獨也是。兩句話並不打架：先能一個人把杯子洗完，才談得上走向誰。融合不是手藝，並肩才是。沒有伴侶的晚上，仍可以練這門課。",
-        sc: "弗洛姆说爱是技艺，蒋勋说孤独也是。两句话并不打架：先能一个人把杯子洗完，才谈得上走向谁。融合不是手艺，并肩才是。没有伴侣的晚上，仍可以练这门课。"
+        tc: "這本書說愛要練。蔣勳說，一個人待著也要會。兩句話能放一起：先能自己把杯子洗完，再談走向誰。沒對象的晚上，也可以練。",
+        sc: "这本书说爱要练。蒋勋说，一个人待着也要会。两句话能放一起：先能自己把杯子洗完，再谈走向谁。没对象的晚上，也可以练。"
       }
     },
     actionPromptEn:
-      "Before you feel loving, do one ordinary care: wash a cup, send a weather text, fold a towel. Write only what you did, not how it was received.",
+      "Before you feel loving, do one small care: wash a cup, send “did you eat?”, fold a towel. Write what you did. Don’t write how they reacted.",
     actionPromptCn: {
-      tc: "在覺得自己有愛意之前，做一件平常的照料：洗一隻杯子，發一句天氣，疊一條毛巾。只寫你做了什麼，不寫對方怎麼收。",
-      sc: "在觉得自己有爱意之前，做一件平常的照料：洗一只杯子，发一句天气，叠一条毛巾。只写你做了什么，不写对方怎么收。"
+      tc: "心還沒熱，先做一件小事：洗杯子，問「吃飯了嗎」，疊毛巾。只寫你做了什麼，別寫對方什麼反應。",
+      sc: "心还没热，先做一件小事：洗杯子，问“吃饭了吗”，叠毛巾。只写你做了什么，别写对方什么反应。"
     }
   },
   {
@@ -273,56 +273,56 @@ window.BOOKS = [
     durationEn: "DURATION: 7 MIN",
     durationCn: { tc: "約七分鐘", sc: "约七分钟" },
     themeEn: "THEME: STYLE",
-    themeCn: { tc: "依戀風格", sc: "依恋风格" },
+    themeCn: { tc: "靠近的方式", sc: "靠近的方式" },
     titleLinesEn: ["ATTACHED"],
     titleFlatEn: "Attached",
     titleCn: { tc: "依戀", sc: "依恋" },
     authorLine: "Amir Levine & Rachel S. F. Heller (2010)",
     quoteEn: "“We are all programmed to seek proximity to a significant other.”",
     quoteCn: { tc: "「誰都需要靠近一個對自己重要的人。」", sc: "“谁都需要靠近一个对自己重要的人。”" },
-    leadEn: "Your pattern is a map of what your body does when the room gets quiet — not a diagnosis of them.",
+    leadEn: "Your pattern is what you do when it gets quiet. It is not a diagnosis of them.",
     leadCn: {
-      tc: "你的模式，畫的是屋子靜下來時身體會做什麼——不是給對方的診斷。",
-      sc: "你的模式，画的是屋子静下来时身体会做什么——不是给对方的诊断。"
+      tc: "你的模式，是屋子靜下來時你會做什麼。不是給對方貼的標籤。",
+      sc: "你的模式，是屋子静下来时你会做什么。不是给对方贴的标签。"
     },
     thesisEn:
-      "The anxious reach and the avoidant leave are not personality branding. They are strategies for staying close to a body that learned closeness as scarcity or as danger. Naming your pattern is not a verdict on the person you love. It is weather literacy for the bond.",
+      "Some people text more when they get scared. Some people go quiet and “get busy.” Both are ways of handling closeness, not proof that you are crazy or cold. Naming your pattern is not blaming the person you like. It is noticing what you do.",
     thesisCn: {
-      tc: "焦慮的伸手、回避的離開，都不是人格標籤。它們是靠近的辦法，來自一個把親密學成稀缺或危險的身體。說出你的模式，不是給所愛的人下判詞，而是給這段紐帶識天氣。",
-      sc: "焦虑的伸手、回避的离开，都不是人格标签。它们是靠近的办法，来自一个把亲密学成稀缺或危险的身体。说出你的模式，不是给所爱的人下判词，而是给这段纽带识天气。"
+      tc: "有人一害怕就狂發消息。有人一靠近就安靜，說自己很忙。兩種都是在處理「靠近」，不能證明你有病，或你很冷。說出自己的模式，不是怪對方，是看清自己在做什麼。",
+      sc: "有人一害怕就狂发消息。有人一靠近就安静，说自己很忙。两种都是在处理“靠近”，不能证明你有病，或你很冷。说出自己的模式，不是怪对方，是看清自己在做什么。"
     },
     highlights: [
       {
         num: "01",
         titleEn: "PROTEST",
-        titleCn: { tc: "抗議", sc: "抗议" },
-        conceptEn: "Anxious activation is a bid: come back, I cannot feel you.",
-        plainEn: "The extra text at 11 p.m. is not “too much.” It is a body asking for a shoreline. Name it as a reach, not as a character flaw.",
+        titleCn: { tc: "多發消息", sc: "多发消息" },
+        conceptEn: "The extra texts mean: come back, I can’t feel you.",
+        plainEn: "That third “you there?” at 11 p.m. is not you being too much. You are checking they still exist. Call it a reach, not a flaw.",
         plainCn: {
-          tc: "焦慮的激活，其實是在示好：回來，我摸不到你。深夜多發出去的那條消息不是「太多」，是身體在找岸。把它叫做伸手，不必叫做毛病。",
-          sc: "焦虑的激活，其实是在示好：回来，我摸不到你。深夜多发出去的那条消息不是“太多”，是身体在找岸。把它叫做伸手，不必叫做毛病。"
+          tc: "多發出去的消息，意思是：回來，我感覺不到你。晚上十一點那句「在嗎」發第三遍，不是你太多。你在確認人還在。這叫伸手，不叫毛病。",
+          sc: "多发出去的消息，意思是：回来，我感觉不到你。晚上十一点那句“在吗”发第三遍，不是你太多。你在确认人还在。这叫伸手，不叫毛病。"
         }
       },
       {
         num: "02",
         titleEn: "DISTANCE",
-        titleCn: { tc: "距離", sc: "距离" },
-        conceptEn: "Avoidant deactivation is also a bid: give me air so I can stay.",
-        plainEn: "The sudden need to “finish something” after a warm evening can be a door closing softly, not a calendar.",
+        titleCn: { tc: "突然很忙", sc: "突然很忙" },
+        conceptEn: "Going cold can also mean: give me space so I can stay.",
+        plainEn: "After a nice evening you suddenly “have homework.” You might just be scared of wanting them that much.",
         plainCn: {
-          tc: "回避的冷卻，也是示好：給我空氣，我才能留。溫熱的一晚之後，突然要去「把事情辦完」，往往是一扇輕輕合上的門，不是日程。",
-          sc: "回避的冷却，也是示好：给我空气，我才能留。温热的一晚之后，突然要去“把事情办完”，往往是一扇轻轻合上的门，不是日程。"
+          tc: "突然變冷，有時是：給我點空，我才能留。一晚相處得很好，你突然說要寫作業。也許只是怕自己太想對方。",
+          sc: "突然变冷，有时是：给我点空，我才能留。一晚相处得很好，你突然说要写作业。也许只是怕自己太想对方。"
         }
       },
       {
         num: "03",
         titleEn: "SECURE",
-        titleCn: { tc: "安穩", sc: "安稳" },
-        conceptEn: "Security is built in small reliable turns, not found as a soulmate trait.",
-        plainEn: "You practice secure by answering yourself kindly when no one is in the thread — a glass of water, a slower breath, a true sentence.",
+        titleCn: { tc: "穩一點", sc: "稳一点" },
+        conceptEn: "Feeling safer is built in small repeats. It is not a personality you are born with.",
+        plainEn: "When no one replies, drink water, take a slower breath, tell yourself one true sentence. That is practice.",
         plainCn: {
-          tc: "安穩是一點一點轉過來的，不是靈魂伴侶自帶的性格。沒人回消息的時候，你仍溫和地回應自己——一杯水、一口慢呼吸、一句實話——這就是在練習。",
-          sc: "安稳是一点一点转过来的，不是灵魂伴侣自带的性格。没人回消息的时候，你仍温和地回应自己——一杯水、一口慢呼吸、一句实话——这就是在练习。"
+          tc: "安心是一次一次練出來的，不是天生的性格。沒人回消息時，喝口水，慢一點呼吸，對自己說一句實話。這就是練習。",
+          sc: "安心是一次一次练出来的，不是天生的性格。没人回消息时，喝口水，慢一点呼吸，对自己说一句实话。这就是练习。"
         }
       }
     ],
@@ -330,45 +330,45 @@ window.BOOKS = [
       {
         num: "04",
         titleEn: "Activating strategies",
-        titleCn: { tc: "伸手的那些辦法", sc: "伸手的那些办法" },
-        conceptEn: "Checking, rehearsing, scanning tone — all ways of pulling a distant body closer.",
-        plainEn: "Name the move without shaming it: I was scanning the last “ok.”, not “I am too much.”",
+        titleCn: { tc: "把人拉回來的辦法", sc: "把人拉回来的办法" },
+        conceptEn: "Checking, rereading, studying their “ok.” — all ways of pulling someone closer.",
+        plainEn: "Say it plainly: I was staring at that “ok.” I was not “too much.”",
         plainCn: {
-          tc: "反覆查看、腹稿、辨語氣——都是把遠了的人拉近一點。給動作起名，不必羞辱它：我在看那個「嗯。」，不是「我太多了」。",
-          sc: "反复查看、腹稿、辨语气——都是把远了的人拉近一点。给动作起名，不必羞辱它：我在看那个“嗯。”，不是“我太多了”。"
+          tc: "反覆看手機、盯著那個「嗯。」，都是想把人拉近一點。直說就好：我在看那個「嗯。」，不是「我太多了」。",
+          sc: "反复看手机、盯着那个“嗯。”，都是想把人拉近一点。直说就好：我在看那个“嗯。”，不是“我太多了”。"
         }
       },
       {
         num: "05",
         titleEn: "Deactivating strategies",
-        titleCn: { tc: "關掉開關的那些辦法", sc: "关掉开关的那些办法" },
-        conceptEn: "Focusing on flaws, burying need, disappearing into work — ways of dimming hunger.",
-        plainEn: "Independence is real. Numbing after a good night, so you don’t have to want again, is a costume of independence.",
+        titleCn: { tc: "把自己關掉", sc: "把自己关掉" },
+        conceptEn: "Listing their flaws, hiding what you need, diving into work — ways to want less.",
+        plainEn: "Independence is real. Going numb after a good night so you don’t have to want again is fake independence.",
         plainCn: {
-          tc: "盯缺點、把需要埋掉、躲進工作——都是把餓意調暗。獨立是真的。一晚好過之後讓自己麻木，以免再渴望，只是獨立的戲服。",
-          sc: "盯缺点、把需要埋掉、躲进工作——都是把饿意调暗。独立是真的。一晚好过之后让自己麻木，以免再渴望，只是独立的戏服。"
+          tc: "挑對方毛病、把需要藏起來、躲進作業——都是讓自己少一點想要。獨立是真的。一晚好過之後讓自己麻木，以免再想對方，那是裝獨立。",
+          sc: "挑对方毛病、把需要藏起来、躲进作业——都是让自己少一点想要。独立是真的。一晚好过之后让自己麻木，以免再想对方，那是装独立。"
         }
       },
       {
         num: "06",
         titleEn: "Effective communication",
-        titleCn: { tc: "把需要說清楚", sc: "把需要说清楚" },
-        conceptEn: "A secure skill: say the need in one clean sentence, then wait.",
-        plainEn: "Not a case. Not a novel in the notes app. One sentence your body could stand behind on the walk home.",
+        titleCn: { tc: "需要只說一句", sc: "需要只说一句" },
+        conceptEn: "A safer habit: one clean sentence, then wait.",
+        plainEn: "Not a speech. Not a long note. Try: “I miss you. Can we talk later?” Then stop.",
         plainCn: {
-          tc: "安穩的本事：需要只說一句，然後等。不是呈詞，不是備忘錄裡的長篇。一句走路回家時身體真能站在後面的話。",
-          sc: "安稳的本事：需要只说一句，然后等。不是呈词，不是备忘录里的长篇。一句走路回家时身体真能站在后面的话。"
+          tc: "更穩的辦法：需要只說一句，然後等。不是演講，不是長語音。可以是：「我想你了，晚點能通話嗎？」然後停。",
+          sc: "更稳的办法：需要只说一句，然后等。不是演讲，不是长语音。可以是：“我想你了，晚点能通话吗？”然后停。"
         }
       },
       {
         num: "07",
         titleEn: "The unavailable room",
-        titleCn: { tc: "無法靠近的房間", sc: "无法靠近的房间" },
-        conceptEn: "You cannot attach your way out of chronic unavailability. That is data, not a dare.",
-        plainEn: "If the pattern never meets you at the door, the work may be leaving the pattern — even first in a sentence on paper.",
+        titleCn: { tc: "怎麼夠都夠不著", sc: "怎么够都够不着" },
+        conceptEn: "You cannot love someone into being available. That is information, not a challenge.",
+        plainEn: "If they never answer, the next step may be to stop chasing — even first as a sentence on paper.",
         plainCn: {
-          tc: "長期夠不著的人，不是靠更用力依戀就能進來的。這是材料，不是挑戰書。若那套模式從不來門口接你，功課也許是離開它——哪怕先在紙上離開。",
-          sc: "长期够不着的人，不是靠更用力依恋就能进来的。这是材料，不是挑战书。若那套模式从不来门口接你，功课也许是离开它——哪怕先在纸上离开。"
+          tc: "對方一直不出現，不是你再用力就能把人拉來。這是事實，不是考題。如果他們從不回，下一步也許是先停手——哪怕先寫在紙上。",
+          sc: "对方一直不出现，不是你再用力就能把人拉来。这是事实，不是考题。如果他们从不回，下一步也许是先停手——哪怕先写在纸上。"
         }
       }
     ],
@@ -382,15 +382,15 @@ window.BOOKS = [
         sc: "——朱光潜《谈美》"
       },
       commentary: {
-        tc: "回避的人常把距離當成活路：離遠一點，才不至於被吞沒。朱光潛說的距離是審美，不是逃走。安穩的依戀也要一點空隙——近到能碰到，遠到還能呼吸。焦慮想取消空隙，回避把空隙修成城牆。識破這兩種天氣，距離才又變成人與人之間剛好的那一點。",
-        sc: "回避的人常把距离当成活路：离远一点，才不至于被吞没。朱光潜说的距离是审美，不是逃走。安稳的依恋也要一点空隙——近到能碰到，远到还能呼吸。焦虑想取消空隙，回避把空隙修成城墙。识破这两种天气，距离才又变成人与人之间刚好的那一点。"
+        tc: "有人一靠近就想逃，覺得離遠一點才安全。朱光潛說的距離，是讓人還能看清，不是把門摔上。靠近也要留一點空：近到碰得到，遠到還能喘氣。",
+        sc: "有人一靠近就想逃，觉得离远一点才安全。朱光潜说的距离，是让人还能看清，不是把门摔上。靠近也要留一点空：近到碰得到，远到还能喘气。"
       }
     },
     actionPromptEn:
-      "After one ping of reaching or leaving today, write three words only: I reached, or I left, or I froze. Stop there. Do not narrate them.",
+      "After you reach for someone or pull away, write only: I reached. Or: I left. Or: I froze. Stop. Don’t write about them.",
     actionPromptCn: {
-      tc: "今天，在一次伸手或離開之後，只寫三個字：我伸手了，或我離開了，或我僵住了。到此為止。不要敘述對方。",
-      sc: "今天，在一次伸手或离开之后，只写三个字：我伸手了，或我离开了，或我僵住了。到此为止。不要叙述对方。"
+      tc: "你伸手了，或走開了，只寫：我伸手了。或：我離開了。或：我僵住了。到此為止。別寫對方。",
+      sc: "你伸手了，或走开了，只写：我伸手了。或：我离开了。或：我僵住了。到此为止。别写对方。"
     }
   },
   {
@@ -410,50 +410,50 @@ window.BOOKS = [
     titleCn: { tc: "抱緊我", sc: "抱紧我" },
     authorLine: "Sue Johnson (2008)",
     quoteEn: "“We are never more emotional than when our love relationships are threatened.”",
-    quoteCn: { tc: "「愛情關係受到威脅時，我們的情緒最為激烈。」", sc: "“爱情关系受到威胁时，我们的情绪最为激烈。”" },
-    leadEn: "Under every fight is a simpler question: if I reach, will anyone turn?",
+    quoteCn: { tc: "「愛情受到威脅時，人最容易激動。」", sc: "“爱情受到威胁时，人最容易激动。”" },
+    leadEn: "Under the fight is a simpler question: if I reach, will you turn around?",
     leadCn: {
-      tc: "每一次爭吵底下，都有一個更簡單的問題：我伸手，有沒有人會轉過來？",
-      sc: "每一次争吵底下，都有一个更简单的问题：我伸手，有没有人会转过来？"
+      tc: "吵架底下有一句更簡單的：我伸手，你會不會轉過來？",
+      sc: "吵架底下有一句更简单的：我伸手，你会不会转过来？"
     },
     thesisEn:
-      "Johnson’s emotionally focused work is almost embarrassingly simple once you hear it: under the protest is a question about the bond. The conversations are not scripts for winning. They let rage speak its original language — reach, not case-building. You can practice that translation alone, on the page.",
+      "This book says most fights are not about the dishes. Under the yelling is: do I still matter to you? Anger is often a messy way of asking someone to come closer. You can practice the softer sentence alone, on paper. You don’t have to send it.",
     thesisCn: {
-      tc: "約翰遜的情緒取向治療，聽懂以後樸素得幾乎叫人不好意思：抗議底下，問的是紐帶還在不在。那些對話不是用來贏的臺詞，是讓怒意說回它原來的語言——伸手，而不是呈詞。這份轉譯，你可以獨自在紙上練。",
-      sc: "约翰逊的情绪取向治疗，听懂以后朴素得几乎叫人不好意思：抗议底下，问的是纽带还在不在。那些对话不是用来赢的台词，是让怒意说回它原来的语言——伸手，而不是呈词。这份转译，你可以独自在纸上练。"
+      tc: "這本書說，很多架不是因為碗沒洗。喊叫底下是：我對你還重要嗎？生氣，常常是笨拙地請對方靠近。那句更軟的話，你可以先寫在紙上。不必發出。",
+      sc: "这本书说，很多架不是因为碗没洗。喊叫底下是：我对你还重要吗？生气，常常是笨拙地请对方靠近。那句更软的话，你可以先写在纸上。不必发出。"
     },
     highlights: [
       {
         num: "01",
         titleEn: "RAW SPOTS",
         titleCn: { tc: "舊傷", sc: "旧伤" },
-        conceptEn: "The old injury arrives in the new room wearing today’s clothes.",
-        plainEn: "The volume in the kitchen is often the age of the fear, not the size of the unwashed pan.",
+        conceptEn: "An old hurt can show up in a new fight, wearing today’s clothes.",
+        plainEn: "You explode about an unwashed pan. The volume is often old fear, not the pan.",
         plainCn: {
-          tc: "舊傷會穿著今天的衣服走進新房間。廚房裡那麼大的聲音，常常是恐懼的年紀，不是那口沒洗的鍋的尺寸。",
-          sc: "旧伤会穿着今天的衣服走进新房间。厨房里那么大的声音，常常是恐惧的年纪，不是那口没洗的锅的尺寸。"
+          tc: "舊的疼會穿著今天的衣服進來。為一口沒洗的鍋大喊，音量常常是舊的害怕，不是那口鍋。",
+          sc: "旧的疼会穿着今天的衣服进来。为一口没洗的锅大喊，音量常常是旧的害怕，不是那口锅。"
         }
       },
       {
         num: "02",
         titleEn: "THE LOOP",
-        titleCn: { tc: "來回", sc: "来回" },
-        conceptEn: "The demon dialogue is the enemy — not the person trapped inside it.",
-        plainEn: "Pursuer and withdrawer are two jobs the bond assigned. You can clock out of yours on paper before bedtime.",
+        titleCn: { tc: "一追一躲", sc: "一追一躲" },
+        conceptEn: "The loop is the problem — not the person stuck in it.",
+        plainEn: "One person chases, the other shuts the door. Before bed, write which job you took tonight. That’s enough.",
         plainCn: {
-          tc: "敵人是那段來回，不是困在裡面的人。追與退，是紐帶分派的兩個職位。睡前可以先在紙上下班。",
-          sc: "敌人是那段来回，不是困在里面的人。追与退，是纽带分派的两个职位。睡前可以先在纸上下班。"
+          tc: "問題是那個一追一躲的圈子，不是圈裡的人。一個人追，一個人關門。睡前寫下：今晚我當的是追的，還是躲的。寫完就好。",
+          sc: "问题是那个一追一躲的圈子，不是圈里的人。一个人追，一个人关门。睡前写下：今晚我当的是追的，还是躲的。写完就好。"
         }
       },
       {
         num: "03",
         titleEn: "HOLD",
-        titleCn: { tc: "抱住", sc: "抱住" },
-        conceptEn: "Repair is a bodily event: I see you, I am here, you can land.",
-        plainEn: "Even imagined, a landing place — a hand on your own sternum for three breaths — changes the body that has to sleep tonight.",
+        titleCn: { tc: "接住", sc: "接住" },
+        conceptEn: "Repair is simple in the body: I see you. I’m here. You can land.",
+        plainEn: "Hand on your chest. Three slow breaths. Even alone, it helps the body that has to sleep tonight.",
         plainCn: {
-          tc: "修復是身體上的事：我看見你，我在，你可以落下。哪怕只是想像，把手放在自己胸骨上呼吸三次，也會改變今晚必須入睡的身體。",
-          sc: "修复是身体上的事：我看见你，我在，你可以落下。哪怕只是想象，把手放在自己胸骨上呼吸三次，也会改变今晚必须入睡的身体。"
+          tc: "修好，身體上很簡單：我看見你，我在，你可以落下。把手放在胸口，慢慢呼吸三次。一個人做，也對今晚要睡覺的身體有用。",
+          sc: "修好，身体上很简单：我看见你，我在，你可以落下。把手放在胸口，慢慢呼吸三次。一个人做，也对今晚要睡觉的身体有用。"
         }
       }
     ],
@@ -461,45 +461,45 @@ window.BOOKS = [
       {
         num: "04",
         titleEn: "Revisiting a wound",
-        titleCn: { tc: "再訪傷口", sc: "再访伤口" },
-        conceptEn: "Return to a hurt without retrying the court case.",
-        plainEn: "Tell it as a weather report: what rose in the chest, what you needed, what you still need. No exhibits.",
+        titleCn: { tc: "再講一次傷", sc: "再讲一次伤" },
+        conceptEn: "Go back to a hurt without trying to win the case.",
+        plainEn: "Write three lines: what I felt, what I needed then, what I still need. No screenshots.",
         plainCn: {
-          tc: "把故事說成天氣：胸口升起了什麼，當時需要什麼，現在仍需要什麼。不必呈證。",
-          sc: "把故事说成天气：胸口升起了什么，当时需要什么，现在仍需要什么。不必呈证。"
+          tc: "再講那次受傷，別再打官司。寫三行：我當時什麼感覺，我需要什麼，我現在還需要什麼。不要截圖作證。",
+          sc: "再讲那次受伤，别再打官司。写三行：我当时什么感觉，我需要什么，我现在还需要什么。不要截图作证。"
         }
       },
       {
         num: "05",
         titleEn: "Forgiving from safety",
-        titleCn: { tc: "從安全裡原諒", sc: "从安全里原谅" },
-        conceptEn: "Forgiveness is not a performance of niceness. It needs a floor.",
-        plainEn: "If there is no floor yet, the honest practice is writing that down — not forcing a graceful text.",
+        titleCn: { tc: "先安全，再原諒", sc: "先安全，再原谅" },
+        conceptEn: "Forgiveness is not acting nice. You need a floor first.",
+        plainEn: "If you still don’t feel safe, write that. Don’t force a sweet text.",
         plainCn: {
-          tc: "原諒不是表演和氣，它需要地板。若還沒有地板，誠實的練習是把這件事寫下來——而不是強行發一條得體的消息。",
-          sc: "原谅不是表演和气，它需要地板。若还没有地板，诚实的练习是把这件事写下来——而不是强行发一条得体的消息。"
+          tc: "原諒不是裝好說話。先要覺得安全。若還不安全，把這句寫下來。別硬發一條溫柔的消息。",
+          sc: "原谅不是装好说话。先要觉得安全。若还不安全，把这句写下来。别硬发一条温柔的消息。"
         }
       },
       {
         num: "06",
         titleEn: "Bonding conversations",
-        titleCn: { tc: "紐帶上的談話", sc: "纽带上的谈话" },
-        conceptEn: "Sex, chores, silence — each can be a conversation about whether we still matter.",
-        plainEn: "Under the topic of who does the dishes, the quieter question is often: do I still have you?",
+        titleCn: { tc: "底下那句", sc: "底下那句" },
+        conceptEn: "Who does the dishes, who texts first, long silence — all can mean: do I still matter?",
+        plainEn: "Under “who does the dishes?” the quieter question is often: do I still have you?",
         plainCn: {
-          tc: "誰洗碗、誰先睡、漫長的沉默——底下都可能在問我們還重不重要。話題底下那句更靜的：我還擁有你嗎？",
-          sc: "谁洗碗、谁先睡、漫长的沉默——底下都可能在问我们还重不重要。话题底下那句更静的：我还拥有你吗？"
+          tc: "誰洗碗、誰先發消息、很久不說話——底下都可能是：我還重要嗎？「誰洗碗」下面，更輕的一句常常是：你還要我嗎？",
+          sc: "谁洗碗、谁先发消息、很久不说话——底下都可能是：我还重要吗？“谁洗碗”下面，更轻的一句常常是：你还要我吗？"
         }
       },
       {
         num: "07",
         titleEn: "Ordinary Tuesdays",
         titleCn: { tc: "普通的星期二", sc: "普通的星期二" },
-        conceptEn: "The bond is kept in unremarkable hours, not in the anniversary speech.",
-        plainEn: "A tiny hold: when you miss someone on an ordinary Tuesday, a hand on your own sternum for three breaths.",
+        conceptEn: "The bond is kept on boring Tuesdays, not in a big speech.",
+        plainEn: "When you miss someone today, hand on your chest, three breaths. That is a small hold.",
         plainCn: {
-          tc: "紐帶是在普通的星期二裡維持的，不是在週年致辭裡。一個很小的抱：想念誰時，把手放在自己胸骨上，呼吸三次。",
-          sc: "纽带是在普通的星期二里维持的，不是在周年致辞里。一个很小的抱：想念谁时，把手放在自己胸骨上，呼吸三次。"
+          tc: "關係是在普通的星期二裡維持的，不是靠一篇演講。今天想念誰，把手放胸口，呼吸三次。這就是一個很小的抱。",
+          sc: "关系是在普通的星期二里维持的，不是靠一篇演讲。今天想念谁，把手放胸口，呼吸三次。这就是一个很小的抱。"
         }
       }
     ],
@@ -513,15 +513,15 @@ window.BOOKS = [
         sc: "——杨绛《我们仨》"
       },
       commentary: {
-        tc: "伸手，不一定有人在房間裡轉過來。楊絳這句話裡，紐帶仍在——只是改由一個人來抱。約翰遜所說的抱緊，不必等另一具身體到場：你可以先讓那句更軟的話落地，哪怕只寫給自己看。",
-        sc: "伸手，不一定有人在房间里转过来。杨绛这句话里，纽带仍在——只是改由一个人来抱。约翰逊所说的抱紧，不必等另一具身体到场：你可以先让那句更软的话落地，哪怕只写给自己看。"
+        tc: "伸手，房間裡不一定有人轉過來。楊絳這句裡，家還在，只是暫時由一個人抱著。那句更軟的話，可以先寫給自己看。",
+        sc: "伸手，房间里不一定有人转过来。杨绛这句里，家还在，只是暂时由一个人抱着。那句更软的话，可以先写给自己看。"
       }
     },
     actionPromptEn:
-      "Write the protest under the protest. Not “you never text back” — the softer sentence: “I got scared I didn’t matter.” You do not have to send it.",
+      "Write the sentence under the complaint. Not “you never text back.” Try: “I got scared I didn’t matter.” Don’t send it.",
     actionPromptCn: {
-      tc: "寫出抗議底下的那句。不是「你從不回消息」——是更軟的那句：「我害怕自己不再重要。」你不必寄出。",
-      sc: "写出抗议底下的那句。不是“你从不回消息”——是更软的那句：“我害怕自己不再重要。”你不必寄出。"
+      tc: "寫出抱怨底下那句。不是「你從不回我」。試試：「我害怕自己不重要了。」不要發出。",
+      sc: "写出抱怨底下那句。不是“你从不回我”。试试：“我害怕自己不重要了。”不要发出。"
     }
   },
   {
@@ -535,56 +535,56 @@ window.BOOKS = [
     durationEn: "DURATION: 8 MIN",
     durationCn: { tc: "約八分鐘", sc: "约八分钟" },
     themeEn: "THEME: TURN TOWARD",
-    themeCn: { tc: "轉向", sc: "转向" },
+    themeCn: { tc: "轉過來", sc: "转过来" },
     titleLinesEn: ["SEVEN", "PRINCIPLES"],
     titleFlatEn: "The Seven Principles for Making Marriage Work",
     titleCn: { tc: "幸福的婚姻", sc: "幸福的婚姻" },
     authorLine: "John M. Gottman & Nan Silver (1999)",
     quoteEn: "The difference is in the turning toward.",
-    quoteCn: { tc: "關鍵在於你是否轉向對方。", sc: "关键在于你是否转向对方。" },
-    leadEn: "Lasting pairs are not luckier in conflict. They are better at the tiny turns.",
+    quoteCn: { tc: "差在你有沒有轉過去。", sc: "差在你有没有转过去。" },
+    leadEn: "Couples who last are not luckier at fighting. They answer the small asks.",
     leadCn: {
-      tc: "能長久的兩人，並不是更會吵架，而是更會做那些微小的轉向。",
-      sc: "能长久的两人，并不是更会吵架，而是更会做那些微小的转向。"
+      tc: "能長久的兩人，不是更會吵架，是小請求來了會答應。",
+      sc: "能长久的两人，不是更会吵架，是小请求来了会答应。"
     },
     thesisEn:
-      "Gottman’s laboratory is unromantic on purpose. Couples who last are not spared argument. They catch bids: a sigh, a joke, a glance that could have been ignored. The Four Horsemen are not sins. They are weather that, left unnamed, becomes climate. Even alone, you can practice turning toward a bid — including one you offer yourself.",
+      "This book watched real couples. The ones who last still argue. What they do better is catch small asks: a sigh, a joke, “look at this.” Ignore those enough times, and the house goes cold. You can practice even alone — including a small ask you give yourself.",
     thesisCn: {
-      tc: "戈特曼的實驗室故意不浪漫。能長久的伴侶不是免於爭執，而是接得住那些示好：一聲嘆息、一個笑話、一個本可以被忽略的眼神。四騎士不是罪，是未被命名就會變成氣候的天氣。即使獨自，你也可以練習轉向一次示好——包括你給自己的那一次。",
-      sc: "戈特曼的实验室故意不浪漫。能长久的伴侣不是免于争执，而是接得住那些示好：一声叹息、一个笑话、一个本可以被忽略的眼神。四骑士不是罪，是未被命名就会变成气候的天气。即使独自，你也可以练习转向一次示好——包括你给自己的那一次。"
+      tc: "這本書看過很多真的兩人。能長久的也會吵。他們比較會接住小事：一聲嘆氣、一個笑話、「你看這個」。小事老是不理，屋子就會冷。一個人也能練——包括你對自己的一次小請求。",
+      sc: "这本书看过很多真的两人。能长久的也会吵。他们比较会接住小事：一声叹气、一个笑话、“你看这个”。小事老是不理，屋子就会冷。一个人也能练——包括你对自己的一次小请求。"
     },
     highlights: [
       {
         num: "01",
         titleEn: "BIDS",
-        titleCn: { tc: "示好", sc: "示好" },
-        conceptEn: "A bid is any reach for contact. Turning toward is the unit of lasting.",
-        plainEn: "The meme, the sigh, the “look at this” from the other room — each is a small hand. Notice one you usually scroll past.",
+        titleCn: { tc: "小請求", sc: "小请求" },
+        conceptEn: "A bid is any small ask to connect. Turning toward it is how pairs last.",
+        plainEn: "A meme, a sigh, “look at this” from the other room — that’s a small hand. Notice one you usually scroll past.",
         plainCn: {
-          tc: "示好就是任何一次伸手。轉向，才是長久的單位。段子、嘆息、隔壁傳來的「你看這個」——都是一隻小手。留意一隻你通常會滑過去的。",
-          sc: "示好就是任何一次伸手。转向，才是长久的单位。段子、叹息、隔壁传来的“你看这个”——都是一只小手。留意一只你通常会滑过去的。"
+          tc: "小請求就是想跟人連上的小事。轉過去接住，兩人比較能長久。段子、嘆氣、隔壁一句「你看這個」，都是一隻小手。留意一隻你通常會滑過去的。",
+          sc: "小请求就是想跟人连上的小事。转过去接住，两人比较能长久。段子、叹气、隔壁一句“你看这个”，都是一只小手。留意一只你通常会滑过去的。"
         }
       },
       {
         num: "02",
         titleEn: "FONDNESS",
-        titleCn: { tc: "欣賞", sc: "欣赏" },
-        conceptEn: "A living map of what you still admire keeps contempt from taking the house.",
-        plainEn: "Write three specific things you respect — in them, or in the self who still makes tea and tries.",
+        titleCn: { tc: "還記得好處", sc: "还记得好处" },
+        conceptEn: "Keep a live list of what you still like. It keeps meanness from taking over.",
+        plainEn: "Write three specific things you still respect — in them, or in yourself for still trying.",
         plainCn: {
-          tc: "心裡還活著一份欣賞，輕蔑就不容易佔屋。寫下三件你仍尊重的具體之事——關於對方，或關於那個還在泡茶、還在試的自己。",
-          sc: "心里还活着一份欣赏，轻蔑就不容易占屋。写下三件你仍尊重的具体之事——关于对方，或关于那个还在泡茶、还在试的自己。"
+          tc: "心裡還記著對方的好處，就不容易滿嘴刻薄。寫下三件你還看得起的：關於對方，或關於那個還在努力的自己。",
+          sc: "心里还记着对方的好处，就不容易满嘴刻薄。写下三件你还看得起的：关于对方，或关于那个还在努力的自己。"
         }
       },
       {
         num: "03",
         titleEn: "HORSEMEN",
-        titleCn: { tc: "四騎士", sc: "四骑士" },
-        conceptEn: "Criticism, contempt, defensiveness, stonewalling — climate, not character.",
-        plainEn: "Catch one horseman in your own mouth at the table today and rename it as weather: that was contempt, passing.",
+        titleCn: { tc: "四種傷人話", sc: "四种伤人话" },
+        conceptEn: "Four habits wreck a house: picking, looking down, defending, shutting the door.",
+        plainEn: "Catch one in your own mouth at dinner: “That’s you looking down.” Name it. Don’t make it who you are.",
         plainCn: {
-          tc: "批評、輕蔑、辯護、冷戰——是天氣，不是人品。今天在飯桌上從自己嘴裡捉住一位騎士，把它重新叫做天氣：那是輕蔑，會過去的。",
-          sc: "批评、轻蔑、辩护、冷战——是天气，不是人品。今天在饭桌上从自己嘴里捉住一位骑士，把它重新叫做天气：那是轻蔑，会过去的。"
+          tc: "四種話最傷：挑刺、瞧不起、只會辯護、把門摔上。晚飯時從自己嘴裡捉住一句，說：這是瞧不起。點名就好，別當成「我這個人就是這樣」。",
+          sc: "四种话最伤：挑刺、瞧不起、只会辩护、把门摔上。晚饭时从自己嘴里捉住一句，说：这是瞧不起。点名就好，别当成“我这个人就是这样”。"
         }
       }
     ],
@@ -592,45 +592,45 @@ window.BOOKS = [
       {
         num: "04",
         titleEn: "Softened startup",
-        titleCn: { tc: "柔和開場", sc: "柔和开场" },
-        conceptEn: "How a complaint begins often decides whether it can be heard.",
-        plainEn: "Swap “you always leave the lights on” for “I felt, I need.” Try it once on the page, to no one.",
+        titleCn: { tc: "開頭軟一點", sc: "开头软一点" },
+        conceptEn: "How a complaint starts often decides if anyone can hear it.",
+        plainEn: "Swap “you always leave the lights on” for “I feel tired. I need the lights off.” Write it once. Don’t send it.",
         plainCn: {
-          tc: "抱怨怎麼開頭，常常決定它聽不聽得進去。把「你總是不關燈」換成「我感到、我需要」。在紙上對誰都不用說，試一次。",
-          sc: "抱怨怎么开头，常常决定它听不听得进去。把“你总是不关灯”换成“我感到、我需要”。在纸上对谁都不用说，试一次。"
+          tc: "抱怨怎麼開頭，常常決定對方聽不聽得進去。把「你總是不關燈」換成「我累了，想關燈」。寫一次。不必發出。",
+          sc: "抱怨怎么开头，常常决定对方听不听得进去。把“你总是不关灯”换成“我累了，想关灯”。写一次。不必发出。"
         }
       },
       {
         num: "05",
         titleEn: "Repair attempts",
-        titleCn: { tc: "修復的嘗試", sc: "修复的尝试" },
-        conceptEn: "The joke, the touch, the “can we start over” — skill, not luck.",
-        plainEn: "Invent one repair sentence you could offer yourself after you have been harsh in the notes app.",
+        titleCn: { tc: "喊停重來", sc: "喊停重来" },
+        conceptEn: "A joke, a touch, “can we start over?” — that’s a skill, not luck.",
+        plainEn: "After you were harsh to yourself in the notes app, write one line you could use: “Can we start over?”",
         plainCn: {
-          tc: "那個笑話、那一下碰、那句「我們重新來」——是本事，不是運氣。給剛對自己苛刻過的你，準備一句可以遞出的修復。",
-          sc: "那个笑话、那一下碰、那句“我们重新来”——是本事，不是运气。给刚对自己苛刻过的你，准备一句可以递出的修复。"
+          tc: "一個笑話、碰一下、一句「我們重新來」——這是本事，不是運氣。你剛在備忘錄裡罵過自己，寫一句能用的：「我們重新來好不好？」",
+          sc: "一个笑话、碰一下、一句“我们重新来”——这是本事，不是运气。你刚在备忘录里骂过自己，写一句能用的：“我们重新来好不好？”"
         }
       },
       {
         num: "06",
         titleEn: "Accepting influence",
-        titleCn: { tc: "接受影響", sc: "接受影响" },
-        conceptEn: "Letting another mind change yours is a form of turning toward.",
-        plainEn: "Pick one small preference you could yield without disappearing — the show, the long way home, the extra five minutes.",
+        titleCn: { tc: "肯聽一點", sc: "肯听一点" },
+        conceptEn: "Letting someone change your mind a little is also turning toward them.",
+        plainEn: "Pick one small thing you could give: the show, the long way home, five more minutes. You don’t disappear.",
         plainCn: {
-          tc: "讓另一個頭腦改你一點，也是轉向。選一個小小的偏好，你可以讓步而不消失——那部片子、那條更遠的路、多出來的五分鐘。",
-          sc: "让另一个头脑改你一点，也是转向。选一个小小的偏好，你可以让步而不消失——那部片子、那条更远的路、多出来的五分钟。"
+          tc: "讓對方改你一點點，也是轉過去。選一件小事可以讓：看哪部片、走遠路、再多五分鐘。你還是你。",
+          sc: "让对方改你一点点，也是转过去。选一件小事可以让：看哪部片、走远路、再多五分钟。你还是你。"
         }
       },
       {
         num: "07",
         titleEn: "Shared meaning",
-        titleCn: { tc: "共享的意義", sc: "共享的意义" },
-        conceptEn: "A pair is a private culture: rituals, roles, a story of “what we are.”",
-        plainEn: "Name one small ritual that would make tonight feel like a culture — even if you are its only citizen: the lamp, the same cup, the same song.",
+        titleCn: { tc: "我們的小習慣", sc: "我们的小习惯" },
+        conceptEn: "Two people make a tiny culture: habits, roles, a story of “what we are.”",
+        plainEn: "Name one small habit that makes tonight feel like yours: the same lamp, the same cup, the same song. Even if you are the only one home.",
         plainCn: {
-          tc: "兩人是一種私下的文化：儀式、位置、一句「我們是什麼」。說出一個小儀式，能讓今晚像一種文化——即使你是唯一的公民：那盞燈、同一隻杯子、同一首歌。",
-          sc: "两人是一种私下的文化：仪式、位置、一句“我们是什么”。说出一个小仪式，能让今晚像一种文化——即使你是唯一的公民：那盏灯、同一只杯子、同一首歌。"
+          tc: "兩人會養出一點自己的規矩：習慣、分工、一句「我們是什麼」。說出一個小習慣，讓今晚像你們的：同一盞燈、同一隻杯子、同一首歌。就算家裡只有你。",
+          sc: "两人会养出一点自己的规矩：习惯、分工、一句“我们是什么”。说出一个小习惯，让今晚像你们的：同一盏灯、同一只杯子、同一首歌。就算家里只有你。"
         }
       }
     ],
@@ -644,15 +644,15 @@ window.BOOKS = [
         sc: "——丰子恺《护生画集》"
       },
       commentary: {
-        tc: "戈特曼的轉向，說到底是護心：把那聲嘆息、那句「你看」當成活物接住，不讓輕蔑把屋子佔滿。護生不是口號，是手還肯伸過去。獨自的晚上，護心也可以是給自己倒一杯水，算一次小小的轉向。",
-        sc: "戈特曼的转向，说到底是护心：把那声叹息、那句“你看”当成活物接住，不让轻蔑把屋子占满。护生不是口号，是手还肯伸过去。独自的晚上，护心也可以是给自己倒一杯水，算一次小小的转向。"
+        tc: "這本書說的「轉過去」，其實是護心：把那聲嘆氣、「你看」當真，別讓刻薄把屋子佔滿。一個人的晚上，給自己倒杯水，也算轉過去一次。",
+        sc: "这本书说的“转过去”，其实是护心：把那声叹气、“你看”当真，别让刻薄把屋子占满。一个人的晚上，给自己倒杯水，也算转过去一次。"
       }
     },
     actionPromptEn:
-      "Catch one bid today — a sigh, a meme, a glance, even one you offered yourself — and turn toward it for ten breaths. Note which bid it was.",
+      "Catch one small ask today — a sigh, a meme, a look, or one you gave yourself. Turn toward it for ten breaths. Write which one it was.",
     actionPromptCn: {
-      tc: "今天接住一次示好——一聲嘆息、一則段子、一個眼神，甚至你給自己的那一次——轉向它，呼吸十次。記下那是哪一次示好。",
-      sc: "今天接住一次示好——一声叹息、一则段子、一个眼神，甚至你给自己的那一次——转向它，呼吸十次。记下那是哪一次示好。"
+      tc: "今天接住一次小請求：一聲嘆氣、一個段子、一個眼神，或你給自己的那一次。轉過去，呼吸十次。寫下是哪一次。",
+      sc: "今天接住一次小请求：一声叹气、一个段子、一个眼神，或你给自己的那一次。转过去，呼吸十次。写下是哪一次。"
     }
   }
 ];
